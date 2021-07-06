@@ -1,0 +1,26 @@
+{
+  "name": "kogas_eaims",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.2.2",
+    "gulp-sass": "^4.1.0"
+  },
+  "dependencies": {
+    "evol-colorpicker": "^3.4.2",
+    "fontello-cli": "^0.6.2",
+    "jqGrid": "^5.4.0",
+    "jquery": "^3.6.0",
+    "jquery-ui": "v1.12.1",
+    "jquery-ui-timepicker-addon": "git://github.com/trentrichardson/jQuery-Timepicker-Addon.git",
+    "yarn": "^1.22.10"
+  },
+  "description": ""
+}
