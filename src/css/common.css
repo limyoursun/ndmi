@@ -129,7 +129,20 @@ input[type='checkbox']{}
 .ft_logo img{padding-right:10px;}
 .addr{margin:21px 0;padding-left:25px;}
 .addr p{font-size:14px;line-height:18px;letter-spacing:0.14px;}
-.copy{padding-top:13px;font-size:13px;color:#939393;letter-spacing:0.13px;}
+.addr .copy{padding-top:13px;font-size:13px;color:#939393;letter-spacing:0.13px;}
 .ft_tel{padding-right:30px;}
 .ft_sns{padding-top:21px;}
 .ft_sns a:first-child{padding-right:7px;}
+
+/* check, hover 스타일 설정 IE, Chrome */
+select option:checked,
+select option:hover {
+background: #f3f3f3;
+color: #555;
+}
+/* check, hover 스타일 설정 FireFox */
+select option:checked,
+select option:hover {
+box-shadow: 0 0 10px 100px #f3f3f3 inset;
+color: #555;
+}
