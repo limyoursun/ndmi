@@ -2,7 +2,7 @@
 /* Reset ---- S */
 *{margin:0;padding:0;}
 body,h1,h2,h3,h4,h5,h6,th,td,input,select,textarea,ul,li,dl,dt,dd,button,p,a{color:#333;font-family:"Malgun Gothic","맑은고딕","AppleSDGothic","Nanum Barun Gothic","NanumGothic","AppleGothic","Dotum","Arial",sans-serif;font-size:12px;font-weight:normal;word-spacing:.02em;letter-spacing:-.05em;margin:0;padding:0;}
-body,html{width:100%;height:100%;text-align:center;-webkit-text-size-adjust:none;background:#fff;}
+body,html{width:100%;height:100%;text-align:center;-webkit-text-size-adjust:none;background:#fff;font-size:0;}
 b{font-weight:600;}
 h1,h2,h3,h4,h5,h6{display:inline-block;box-sizing:border-box;width:auto;}
 ul,ol,li{box-sizing:border-box;list-style:none;}
@@ -17,8 +17,8 @@ em,address,i{font-style:normal;}
 table{border:0;border-spacing:0;width:100%;text-align:center;border-collapse:collapse;}
 button{display:inline-block;border:none;cursor:pointer;box-sizing:border-box;background:transparent;}
 .block,.block div{display:block;}
-input[type="text"],input[type="password"],textarea,select{height:25px;border:1px solid #9cabb6;color:#333;background-color:rgba(255,255,255,.9);vertical-align:middle;padding:0 5px;box-sizing:border-box;}
-select{min-width:50px;padding-right:20px;background:url(/images/btn_select.png) right 5px center no-repeat, rgba(255,255,255,.9);;-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+input[type="text"],input[type="password"],textarea,select{height:25px;border:1px solid #cdcdcd;color:#333;background-color:rgba(255,255,255,.9);vertical-align:middle;padding:0 5px;box-sizing:border-box;}
+select{min-width:50px;padding-right:20px;background:url(../images/btn_select.png) right 5px center no-repeat, rgba(255,255,255,.9);;-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 select::-ms-expand {display: none;}
 
 /* Common ---- S */
@@ -26,7 +26,6 @@ select::-ms-expand {display: none;}
 .clearfix{*zoom:1;}
 .clearfix::before,
 .clearfix::after{display:block;content:"";line-height:0;clear:both;}
-.full{width:100%;box-sizing:border-box;}
 
 .fl{float:left;}
 .fr{float:right;}
@@ -34,51 +33,17 @@ select::-ms-expand {display: none;}
 .alignR{text-align:right;}
 .alignC{text-align:center;}
 
+.font_blue{color:#176899 !important;}
+
+.wrap{width:1420px;max-width:1920px;margin:0 auto;}
+.con_wrap{min-height:calc(100% - 297px);}
 .flex_wrap{display:flex;}
-.overlay{} /* pop up 배경 */
-
-
-
-
+.f_sb{justify-content:space-between;}
+.f_c{justify-content:center;}
 
 /* Btn ---- S */
-
-
-
-/* Input ---- S */
-input[type="text"]{}
-input[type="radio"]{}
-input[type="checkbox"]{}
-input[type="radio"]{}
-input[type='checkbox']{}
-
-
-
-
-/* Search ---- S */
-
-
-
-
-
-/* Header ---- S */
-.header{}
-.util{}
-.util_list{}
-
-
-
-/* Nav ---- S */
-.nav{}
-.nav .gnb{}
-.gnb .sub{}
-
-
-/* Footer ---- S */
-.footer{}
-
-
-
+.btn_grayline{border:1px solid #cdcdcd;color:#777777;}
+.btn_grayline:hover, .btn_grayline:active{background-color:#cdcdcd;color:#fff;}
 
 /* Table ---- S */
 .tbl_top{}
@@ -89,18 +54,12 @@ input[type='checkbox']{}
 .tbl_row th,.tbl_row td{}
 .tbl_col th,.tbl_col td{}
 
-
-
-
-/* Paginate ---- S */
-.paginate{margin-top:15px;padding:15px 0;text-align:center}
-.paginate a,.paginate strong{display:inline-block;position:relative;_width /**/:14px;min-width:22px;padding:1px 5px 2px 4px;color:#333;font-size:15px;line-height:normal;box-sizing:border-box;font-weight:normal;margin:0 3px;font-family:"Malgun Gothic","맑은고딕","AppleSDGothic","Nanum Barun Gothic","NanumGothic","AppleGothic","Dotum","Arial",sans-serif;}
-.paginate strong{color:#fff;background-color:#094fa3;}
-.paginate .pre,
-.paginate .next,
-.paginate .first,
-.paginate .last{display:inline-flex;justify-content:center;align-items:center;position:relative;top:-1px;_width /**/:47px;width:22px;height:22px;color:#777;background-color:#fff;border:1px solid #d7d7d7;margin:0 1px;font-size:9px;font-weight:bold;letter-spacing:-.09em;padding:0;}
-.paginate a:hover{text-decoration:underline;}
+/* Input ---- S */
+input[type="text"]{}
+input[type="radio"]{}
+input[type="checkbox"]{}
+input[type="radio"]{}
+input[type='checkbox']{}
 
 /* jquery-ui custom ---- S */
 .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button{font-family:"Malgun Gothic","맑은고딕","AppleSDGothic","Nanum Barun Gothic","NanumGothic","AppleGothic","Dotum","Arial",sans-serif;}
@@ -134,3 +93,43 @@ input[type='checkbox']{}
 .ui-jqgrid .ui-jqgrid-pager{background:#eff2f5;border-radius:0;}
 .ui-jqgrid .ui-jqgrid-pager td{padding:0;border:none;background:transparent;}
 .ui-jqgrid .ui-jqgrid-pager input{height:16px;border-radius:0;vertical-align:baseline;padding:3px 8px;}
+
+/* style ---- S */
+.logo{position:relative;}
+.logo p{display:inline-block;font-family:'대한민국정부상징체';text-align:left;}
+.logo img{vertical-align:bottom;}
+.logo span{display:block;}
+
+/* Header ---- S */
+.hd_logo{top:14px;}
+.hd_logo p{font-size:14px;}
+.hd_logo img{padding-right:12px;}
+.hd_logo span{font-size:26.5px;color:#222;letter-spacing:-2.65px;}
+.gnb_wrap{border-top:1px solid #cdcdcd;border-bottom:1px solid #cdcdcd;}
+.gnb li{display:inline-block;width:20%;}
+.depth1{width:100%;font-size:20px;font-weight:600;line-height:55px;}
+.depth1:hover,.depth1:active{background:linear-gradient(to right, #ed001b 0%,#ffa75b 20%,#f9fc5a 36%,#43bc60 58%,#5686ef 81%,#b326ff 100%);;color:#000;}
+.util_list{margin:22px 0;}
+.util_list button{padding:6px 12px;font-weight:600;}
+.util_list>li:first-child button{margin-right:5px;}
+
+/* Gnb ---- S */
+
+/* Footer ---- S */
+.footer{border-bottom:1px solid #cdcdcd;line-height:49px;}
+.sitemap li::before{content:'';display:inline-block;width:1px;height:10px;background-color:#a3a3a3;}
+.sitemap>li:first-child:before{display:none;}
+.sitemap a{color:#555;font-size:14px;margin:0 24px;}
+.sitemap>li:first-child a{margin-left:0;}
+.family_site select{font-size:14px;color:#555;}
+.family_site>li:first-child select{margin-right:5px;}
+.ft_logo{top:19px;}
+.ft_logo p{font-size:13px;color:#a3a3a3;}
+.ft_logo span{font-size:20px;color:#6a6a6a;letter-spacing:-0.5px;}
+.ft_logo img{padding-right:10px;}
+.addr{margin:21px 0;padding-left:25px;}
+.addr p{font-size:14px;line-height:18px;letter-spacing:0.14px;}
+.copy{padding-top:13px;font-size:13px;color:#939393;letter-spacing:0.13px;}
+.ft_tel{padding-right:30px;}
+.ft_sns{padding-top:21px;}
+.ft_sns a:first-child{padding-right:7px;}
