@@ -10,7 +10,7 @@
   "devDependencies": {
     "browser-sync": "^2.26.13",
     "gulp": "^4.0.2",
-    "gulp-file-include": "^2.2.2",
+    "gulp-file-include": "^2.2.2"
   },
   "dependencies": {
     "jqGrid": "^5.4.0",
