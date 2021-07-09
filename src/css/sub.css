@@ -41,5 +41,5 @@
 .main_notice li a:hover{color:#f7e670}
 .main_notice li a::before{content:"·";font-weight:bold;margin-right:9px;}
 .popular,
-.newest{position:relative;flex:1;display:flex;
- max-width:709px;text-align:left;padding:22px 70px;box-sizing:border-box;}
+.newest{position:relative;flex:0 1 auto;display:flex;
+width:709px;text-align:left;padding:22px 70px;box-sizing:border-box;}
