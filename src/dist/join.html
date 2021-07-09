@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="../plugins/axicon/axicon.min.css" />
+  <link rel="stylesheet" href="../plugins/jquery-ui/themes/base/jquery-ui.min.css" />
+  <link rel="stylesheet" href="../plugins/jqueryui-timepicker-addon/dist/jquery-ui-timepicker-addon.min.css" />
+  <link rel="stylesheet" href="../plugins/jqGrid/css/ui.jqgrid.css" />
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/sub.css">
+  <link rel="stylesheet" href="../css/pop.css">
+  <script src="../plugins/jquery/dist/jquery.min.js"></script>
+  <script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
+  <script src="../plugins/jquery-ui/ui/i18n/datepicker-ko.js"></script>
+  <script src="../plugins/jqueryui-timepicker-addon/dist/jquery-ui-timepicker-addon.min.js"></script>
+  <script src="../plugins/jqueryui-timepicker-addon/dist/i18n/jquery-ui-timepicker-ko.js"></script>
+  <script src="../plugins/jqGrid/js/jquery.jqGrid.min.js"></script>
+  <script src="../plugins/jqGrid/js/i18n/grid.locale-kr.js"></script>
+  <script src="../js/ui_common.js"></script>
+  <link rel="stylesheet" href="../css/ol/ol.css">
+</head>
+<body>
+<body>
+<div>
+  <header class="hd wrap flex_wrap f_sb">
+    <h1 class="logo hd_logo">
+      <img src="../images/logo.png" alt="지진방재콘텐츠공유포털 로고 이미지">
+      <p class="font_blue">
+        국립재난안전연구원
+        <span>지진방재 콘텐츠 공유 포털</span>
+      </p>
+    </h1>
+    <div class="util">
+      <ul class="util_list flex_wrap">
+        <li><button type="button" class="btn_grayline">로그인</button></li>
+        <li><button type="button" class="btn_grayline">회원가입</button></li>
+      </ul>
+    </div>
+  </header>
+  <nav class="gnb_wrap">
+    <ul class="gnb wrap flex_wrap f_c" role="navigation">
+      <li>
+        <a href="#" class="depth1">대국민 지진정보</a>
+        <ul class="depth2">
+          <!-- <li><a href="#"></a></li>
+          <li><a href="#"></a></li>-->
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="depth1">지진정책자료</a>
+        <ul class="depth2">
+          <!-- <li><a href="#"></a></li>
+          <li><a href="#"></a></li>-->
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="depth1">지진학술자료</a>
+        <ul class="depth2">
+          <!-- <li><a href="#"></a></li>
+          <li><a href="#"></a></li>-->
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="depth1">포털소개</a>
+        <ul class="depth2">
+          <!-- <li><a href="#"></a></li>
+          <li><a href="#"></a></li>-->
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>
+<!-- CONTENTS ---- S -->
+  <div class="wrap join">
+    <h1>회원가입</h1>
+    <div class="tit_join">
+      <h1>회원가입</h1>
+      <p><b>지진방재정보 공유포털</b>의 회원이 되어주셔서 감사합니다.</p>
+    </div>
+      <div>
+        <ul>
+          <li><a href="#">개인정보 수집·이용동의</a></li>
+          <li><a href="#" class="on">상세정보입력</a></li>
+          <li><a href="#">가입완료</a></li>
+        </ul>
+      <!-- 2단계 : 회원정보 상세입력 -->
+        <div>
+          <h2>회원정보 상세입력</h2>
+          <table class="tbl_row">
+            <caption class="blind">회원정보 상세입력</caption>
+            <tbody>
+              <tr>
+                <th class="required">아이디</th>
+                <td>
+                  <input type="text">
+                  <button type="button">중복 확인</button>
+                </td>
+              </tr>
+              <tr>
+                <th class="required">비밀번호</th>
+                <td>
+                  <input type="text">
+                  <p>비밀번호는 영문, 숫자, 특수문자를 섞어 8~20자를 사용합니다.<br>ID를 비밀번호에 사용할 수 없습니다.</p>
+                </td>
+              </tr>
+              <tr>
+                <th class="required">비밀번호 확인</th>
+                <td>
+                  <input type="text">
+                </td>
+              </tr>
+              <tr>
+                <th class="required">성명</th>
+                <td>
+                  <input type="text">
+                </td>
+              </tr>
+              <tr>
+                <th class="required">전화번호(직장)</th>
+                <td>
+                  <input type="text">
+                </td>
+              </tr>
+              <tr>
+                <th class="required">전화번호(핸드폰)</th>
+                <td>
+                  <input type="text">
+                </td>
+              </tr>
+              <tr>
+                <th class="required">E-mail</th>
+                <td>
+                  <input type="text">
+                  <p>E-mail 주소는 ID 분실 및 비밀번호 찾기로 사용하며, 상용메일이 아닌 기관메일로 등록해 주시기 바랍니다.<br>(ex.example@korea.kr)</p>
+                </td>
+              </tr>
+              <tr>
+                <th class="required">소속기관</th>
+                <td>
+                  <input type="text" placeholder="직접입력">
+                </td>
+              </tr>
+              <tr>
+                <th>권한선택</th>
+                <td>
+                  <input type="radio" id="position_1" name="position">
+                  <label for="position_1">실무자</label>
+                  <input type="radio" id="position_2" name="position">
+                  <label for="position_2">연구자</label>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <button type="button">확인</button>
+        </div>
+      <!-- 2단계 : 회원정보 상세입력 -->      
+    </div>
+  </div>
+<!-- CONTENTS ---- E -->
+<div>
+  <div class="footer">
+    <div class="wrap flex_wrap f_sb">
+      <ul class="sitemap flex_wrap">
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#" class="font_blue">개인정보 처리방침</a></li>
+        <li><a href="#">포털소개</a></li>
+      </ul>
+      <ul class="family_site flex_wrap">
+        <li>
+          <select name="family_site">
+            <option value="국내지진방재 관련사이트">국내지진방재 관련사이트</option>
+            <option value="사이트01">사이트01</option>
+            <option value="사이트01">사이트01</option>
+            <option value="사이트01">사이트01</option>
+            <option value="사이트01">사이트01</option>
+            <option value="사이트01">사이트01</option>
+            <option value="사이트01">사이트01</option>
+            <option value="사이트01">사이트01</option>
+            <option value="사이트01">사이트01</option>
+            <option value="사이트01">사이트01</option>
+          </select>
+        </li>
+        <li>
+          <select name="family_site_2">
+            <option value="국내지진방재 관련사이트">국내지진방재 관련사이트</option>
+          </select>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap flex_wrap f_sb">
+    <div class="flex_wrap alignL">
+      <h1 class="logo ft_logo">
+        <img src="../images/logo.png" alt="국립재난연구원 로고 이미지">
+        <p>
+          행정안전부
+          <span>국립재난안전연구원</span>
+        </p>
+      </h1>
+      <address class="addr">
+        <p>우) 44538 울산광역시 중구 종가로 365 국립재난안전연구원</p>
+        <p>
+          <span class="ft_tel">TEL : <a href="tel:052-928-8000">052-928-8000</a></span>
+          <span>대표이메일(자료요청 등 문의) : <a href="mailto:ndmi@korea.kr">ndmi@korea.kr</a></span>
+        </p>
+        <p class="copy">
+          Copyright &copy; 2013 by National Disaster Management Research Institute. All Rights Reserved.
+        </p>
+      </address>
+    </div>
+    <div class="ft_sns">
+      <a href="https://www.facebook.com/NDMIKorea/"><img src="../images/ico_facebook.png" alt="페이스북 아이콘 이미지"></a>
+      <a href="https://www.youtube.com/channel/UCZqKqkyEkGcFYotEBzEIjiQ"><img src="../images/ico_youtube.png" alt="유튜브 아이콘 이미지"></a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
