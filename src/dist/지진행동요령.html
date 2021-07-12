@@ -24,8 +24,8 @@
 </head>
 <body>
 <body>
-<div id="wrap">
-  <div>
+  <div id="wrap">
+    <div>
   <header class="hd wrap flex_wrap f_sb">
     <h1 class="logo hd_logo">
       <img src="../images/logo.png" alt="지진방재콘텐츠공유포털 로고 이미지">
@@ -74,63 +74,134 @@
     </ul>
   </nav>
 </div>
-  <!-- CONTENTS ---- S -->
-    <div class="con_wrap login">
-    <div class="flex_wrap f_sb">
-      <section class="section_l">
-        <div>
-          <h1>
-            <img src="#" alt="자물쇠 아이콘">
-            <span>로그인</span>
-          </h1>
-        </div>
-        <div>
-          <div class="flex_wrap">
-            <ul>
-              <li>
-                <label for="login_id">ID</label>
-                <input type="text" id="login_id">
-              </li>
-              <li>
-                <label for="login_pw">Password</label>
-                <input type="password" id="login_pw">
-              </li>
-            </ul>
-            <button type="button" class="btn btn_blue">로그인</button>
-          </div>
+    <!-- CONTENTS ---- S -->
+    <div class="con_wrap">
+      <ul>
+        <li><a href="#"><i class="axi axi-home"></i></a></li>
+        <li><a href="#">대국민지진정보</a></li>
+        <li><a href="#">지진행동요령</a></li>
+      </ul>
+      <div class="flex_wrap f_c">
+        <div class="aside">
+          <h2 class="tit_lnb">대국민지진정보</h2>
           <ul>
-            <li><button type="button">아이디 찾기</button></li>
-            <li><button type="button">비밀번호 찾기</button></li>
-            <li><button type="button">개인정보 처리방침</button></li>
+            <li>
+              <a href="#" class="lnb_depth1">지진발생정보</a>
+              <ul>
+                <li><a href="#">계기지진 정보</a></li>
+                <li><a href="#">역사지진 정보</a></li>
+                <li><a href="#">국외지진 정보</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="lnb_depth1 on">지진행동요령</a></li>
+            <li><a href="#" class="lnb_depth1">지진안정상식</a></li>
+            <li><a href="#" class="lnb_depth1">국내 재난안전 포털</a></li>
+            <li><a href="#" class="lnb_depth1">지진방재사이트</a></li>
           </ul>
         </div>
-      </section>
-      <section class="section_r">
         <div>
-          <h2>회원가입</h2>
+          <div class="tit_h2">
+            <h2>지진행동요령</h2>
+            <p>지진행동요령은 재난으로 발생할 수 있는 피해에 대비하여 국민의 생명 · 신체 · 재산과 국가에 피해를 주거나 줄 수 있는 재난상황에 대해 세부 대응절차 및 행동 조치 사항 등을 규정한
+              것이다.<br>현장에서 실제로 활용할 수 있도록 평소부터 행동요령을 숙지하고 있는 것이 중요하다.</p>
+          </div>
           <div>
-            <p>회원가입을 하시면 전문적인 DATA활용을 포함하여 편리하고 다양한 서비스를 제공 받으실 수 있습니다.</p>
-            <button type="button">회원가입</button>
+            <div class="search">
+              <select name="" id="">
+                <option value="정렬">정렬</option>
+                <option value="최신순">최신순</option>
+                <option value="조회순">조회순</option>
+                <option value="업데이트순">업데이트순</option>
+                <option value="다운로드순">다운로드순</option>
+              </select>
+              <select name="" id="">
+                <option value="전체">전체</option>
+              </select>
+              <button type="button">검색</button>
+            </div>
+            <div>
+              <div class="flex_wrap f_sb">
+                <div>
+                  <input type="checkbox">
+                  <label for="">전체선택</label>
+                  <button type="button">첨부파일 다운로드</button>
+                  <button type="button">엑셀파일 다운로드</button>
+                </div>
+                <p>
+                  총<span>300</span>개 <span>1</span>/10페이지
+                </p>
+              </div>
+              <ul>
+                <li>
+                  <input type="checkbox">
+                  <span>
+                    <img src="#" alt="지진국민행동요령 표지 이미지">
+                  </span>
+                  <span>
+                    <p>지진행동요령</p>
+                    <b>지진 국민행동요령</b>
+                    <dl>
+                      <dt>발행일</dt>
+                      <dd>2019년 12월</dd>
+                      <dt>발행기관</dt>
+                      <dd>행정안전부</dd>
+                      <dt>조회수</dt>
+                      <dd>2,221</dd>
+                    </dl>
+                  </span>
+                </li>
+                <li>
+                  <input type="checkbox">
+                  <span>
+                    <img src="#" alt="지진과 지진해일(초등학교 고학년) 표지 이미지">
+                  </span>
+                  <span>
+                    <p>지진행동요령</p>
+                    <b>지진과 지진해일(초등학교 고학년)</b>
+                    <dl>
+                      <dt>발행일</dt>
+                      <dd>2019년 12월</dd>
+                      <dt>발행기관</dt>
+                      <dd>소방방재청</dd>
+                      <dt>조회수</dt>
+                      <dd>1,257</dd>
+                    </dl>
+                  </span>
+                </li>
+                <li>
+                  <input type="checkbox">
+                  <span>
+                    <img src="#" alt="지진국민행동요령 전체통합본(영상) 표지 이미지">
+                  </span>
+                  <span>
+                    <p>지진행동요령</p>
+                    <b>지진국민행동요령 전체통합본(영상)</b>
+                    <dl>
+                      <dt>발행일</dt>
+                      <dd>2019년 12월</dd>
+                      <dt>발행기관</dt>
+                      <dd>행정안전부 국립재난안전연구원</dd>
+                      <dt>조회수</dt>
+                      <dd>1,004</dd>
+                    </dl>
+                  </span>
+                </li>
+              </ul>
+              <div>
+                <input type="checkbox">
+                <label for="">전체선택</label>
+                <button type="button">첨부파일 다운로드</button>
+                <button type="button">엑셀파일 다운로드</button>
+              </div>
+
+              <!-- 페이징~~~ 징징윙윙 -->
+            </div>
           </div>
         </div>
-        <div>
-          <h3>회원가입대상</h3>
-          <ol>
-            <li>1. 국가기관</li>
-            <li>2. 지방자치단체</li>
-            <li>3. 「공공기관의 운영에 관한 법률」의 적용을 받는 공공기관</li>
-            <li>4. 「정부출연연구기관 등의 설립·운영 및 육성에 관한 법률」및 「과학기술분야 정부출연연구기관 등의 설립운영 및 육성에 관한 법률」에 따른 정부출연연구기관</li>
-            <li>5. 「고등교육법」제 2조 1호~7호의 기관</li>
-            <li>6. 기타 내진설계 등 지진관련 산업체·연구계 관계자</li>
-          </ol>
-          <p>지진방재 콘텐츠 공유포털은 기본적으로 대국민을 대상으로 하는 지진방재 콘텐츠를 제공하고 있습니다. 일부 자료는 보안, 개인정보포함등의 사유로 위 1~6호에 해당하는 기관 및 소속 직원에 한하여 제공되오니 회원가입을 진행해주시길 바랍니다.<br>(관리자 승인 후 비공개 자료 열람 가능)</p>
-          <h1>수정수정부분수정수정부분수정수정부분</h1>
-        </div>
-      </section>
+      </div>
     </div>
-  </div>
-  <!-- CONTENTS ---- E -->
-  <footer>
+    <!-- CONTENTS ---- E -->
+    <footer>
   <div class="footer">
     <div class="wrap flex_wrap f_sb">
       <ul class="sitemap flex_wrap">
@@ -187,6 +258,7 @@
     </div>
   </div>
 </footer>
-</div>
+  </div>
 </body>
+
 </html>
