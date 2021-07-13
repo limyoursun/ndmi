@@ -76,108 +76,121 @@
   </nav>
 </div>
     <!-- CONTENTS ---- S -->
-    <div class="con_wrap">
-      <ul>
-        <li><a href="#"><i class="axi axi-home"></i></a></li>
+    <div class="wrap con_wrap">
+      <ul class="breadcrumb">
+        <li><a href="#" class="font_blue"><i class="axi axi-home"></i></a></li>
         <li><a href="#">대국민지진정보</a></li>
-        <li><a href="#">지진행동요령</a></li>
+        <li><a href="#">국내재난안전포털</a></li>
       </ul>
       <div class="flex_wrap f_c">
-        <div class="aside">
-          <h2 class="tit_lnb">대국민지진정보</h2>
-          <ul>
+        <div class="snb">
+          <h2 class="tit_snb">대국민 지진정보</h2>
+          <ul class="alignL">
             <li>
-              <a href="#" class="lnb_depth1">지진발생정보</a>
-              <ul>
+              <a href="#" class="snb_depth1">지진발생정보</a>
+              <ul class="snb_depth2">
                 <li><a href="#">계기지진 정보</a></li>
                 <li><a href="#">역사지진 정보</a></li>
                 <li><a href="#">국외지진 정보</a></li>
               </ul>
             </li>
-            <li><a href="#" class="lnb_depth1">지진행동요령</a></li>
-            <li><a href="#" class="lnb_depth1">지진안정상식</a></li>
-            <li><a href="#" class="lnb_depth1 on">국내 재난안전 포털</a></li>
-            <li><a href="#" class="lnb_depth1">지진방재사이트</a></li>
+            <li><a href="#" class="snb_depth1">지진행동요령</a></li>
+            <li><a href="#" class="snb_depth1">지진안정상식</a></li>
+            <li><a href="#" class="snb_depth1 on">국내 재난안전 포털</a></li>
+            <li><a href="#" class="snb_depth1 last">지진방재사이트</a></li>
           </ul>
         </div>
-        <div>
+        <div class="section_r">
           <div class="tit_h2">
             <h2>국내 재난안전 포털</h2>
           </div>
           <div>
-            <div class="search flex_wrap">
-              <h3 style="flex:1 0; width:200px;">국내 주요 재난 포털 조회</h3>
+            <div class="search disaster_portal flex_wrap">
+              <h3>국내 주요 재난 포털 조회</h3>
               <ul class="flex_wrap" style="flex-shrink:1;">
-                <li>
-                  <input type="checkbox">
-                  <label for="#">서울</label>
+                <li class="checks">
+                  <input type="radio" name="area" id="seoul">
+                  <label for="seoul">서울</label>
                 </li>
-                <li>
-                  <input type="checkbox">
-                  <label for="#">인천</label>
+                <li class="checks">
+                  <input type="radio" name="area" id="incheon">
+                  <label for="incheon">인천</label>
                 </li>
-                <li>
-                  <input type="checkbox">
-                  <label for="#">경기</label>
+                <li class="checks">
+                  <input type="radio" name="area" id="gyeonggi">
+                  <label for="gyeonggi">경기</label>
                 </li>
-                <li>
-                  <input type="checkbox">
-                  <label for="#">강원</label>
+                <li class="checks">
+                  <input type="radio" name="area" id="gangwon">
+                  <label for="gangwon">강원</label>
                 </li>
-                <li>
-                  <input type="checkbox">
-                  <label for="#">대전</label>
+                <li class="checks">
+                  <input type="radio" name="area" id="daejeon">
+                  <label for="daejeon">대전</label>
                 </li>
-                <li>
-                  <input type="checkbox">
-                  <label for="#">대구</label>
+                <li class="checks">
+                  <input type="radio" name="area" id="daegu">
+                  <label for="daegu">대구</label>
                 </li>
-                <li>
-                  <input type="checkbox">
-                  <label for="#">광주</label>
+                <li class="checks">
+                  <input type="radio" name="area" id="gwangju">
+                  <label for="gwangju">광주</label>
                 </li>
-                <li>
-                  <input type="checkbox">
-                  <label for="#">부산</label>
+                <li class="checks">
+                  <input type="radio" name="area" id="busan">
+                  <label for="busan">부산</label>
                 </li>
-                <li>
-                  <input type="checkbox">
-                  <label for="#">제주</label>
+                <li class="checks">
+                  <input type="radio" name="area" id="jeju">
+                  <label for="jeju">제주</label>
                 </li>
-                <li>
-                  <input type="checkbox">
-                  <label for="#">충북</label>
+                <li class="checks">
+                  <input type="radio" name="area" id="chungbuk">
+                  <label for="chungbuk">충북</label>
                 </li>
-                <li>
-                  <input type="checkbox">
-                  <label for="#">충남</label>
+                <li class="checks">
+                  <input type="radio" name="area" id="chungnam">
+                  <label for="chungnam">충남</label>
                 </li>
-                <li>
-                  <input type="checkbox">
-                  <label for="#">전북</label>
+                <li class="checks">
+                  <input type="radio" name="area" id="jeonbuk">
+                  <label for="jeonbuk">전북</label>
                 </li>
-                <li>
-                  <input type="checkbox">
-                  <label for="#">전남</label>
+                <li class="checks">
+                  <input type="radio" name="area" id="jeonnam">
+                  <label for="jeonnam">전남</label>
                 </li>
-                <li>
-                  <input type="checkbox">
-                  <label for="#">경북</label>
+                <li class="checks">
+                  <input type="radio" name="area" id="gyeongbuk">
+                  <label for="gyeongbuk">경북</label>
                 </li>
-                <li>
-                  <input type="checkbox">
-                  <label for="#">경남</label>
+                <li class="checks">
+                  <input type="radio" name="area" id="gyeongnam">
+                  <label for="gyeongnam">경남</label>
                 </li>
               </ul>
             </div>
             <div>
-              <div>
-                <h3>제주정보</h3>
-                <div class="flex_wrap f_sb">
+              <h3>제주정보</h3>
+              <div class="flex_wrap f_sb">
+                <div>
+                  <img src="http://placehold.it/553x698">
                   <div>
-                    <img src="http://placehold.it/320x500">
-                    <div>
-                      <h4>지진정보</h4>
+                    <h4>지진정보</h4>
+                    <dl>
+                      <dt>진원시</dt>
+                      <dd>2008-05-31 21:59:30.0</dd>
+                      <dt>진원지</dt>
+                      <dd>제주 제주시 서쪽 78㎞ 해역</dd>
+                      <dt>규모</dt>
+                      <dd>4.2</dd>
+                    </dl>
+                  </div>
+                </div>
+                <div>
+                  <ul>
+                    <li>
+                      <h4 class="font_skyblue">인근 주요지진</h4>
                       <dl>
                         <dt>진원시</dt>
                         <dd>2008-05-31 21:59:30.0</dd>
@@ -185,30 +198,15 @@
                         <dd>제주 제주시 서쪽 78㎞ 해역</dd>
                         <dt>규모</dt>
                         <dd>4.2</dd>
+                        <dt>피해</dt>
+                        <dd>이 지진정보는 자동분석 결과이며 상세분석 후 변경</dd>
                       </dl>
-                    </div>
-                  </div>
-                  <div>
-                    <ul>
-                      <li>
-                        <h4>인근 주요지진</h4>
-                        <dl>
-                          <dt>진원시</dt>
-                          <dd>2008-05-31 21:59:30.0</dd>
-                          <dt>진원지</dt>
-                          <dd>제주 제주시 서쪽 78㎞ 해역</dd>
-                          <dt>규모</dt>
-                          <dd>4.2</dd>
-                          <dt>피해</dt>
-                          <dd>이 지진정보는 자동분석 결과이며 상세분석 후 변경</dd>
-                        </dl>
-                      </li>
-                      <li>
-                        <h4>제주특별시 주요포털</h4>
+                    </li>
+                    <li>
+                      <h4 class="font_skyblue">제주특별시 주요포털</h4>
 
-                      </li>
-                    </ul>
-                  </div>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>

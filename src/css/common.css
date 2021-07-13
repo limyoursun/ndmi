@@ -4,7 +4,7 @@
 body,h1,h2,h3,h4,h5,h6,th,td,input,select,textarea,ul,li,dl,dt,dd,button,p,a{color:#333;font-family:"Malgun Gothic","맑은고딕","AppleSDGothic","Nanum Barun Gothic","NanumGothic","AppleGothic","Dotum","Arial",sans-serif;font-size:12px;font-weight:normal;word-spacing:.02em;letter-spacing:-.05em;margin:0;padding:0;}
 body,html{text-align:center;-webkit-text-size-adjust:none;background:#fff;font-size:0;}
 b{font-weight:600;}
-h1,h2,h3,h4,h5,h6{display:inline-block;box-sizing:border-box;width:auto;}
+h1,h2,h3,h4,h5,h6{box-sizing:border-box;width:auto;}
 ul,ol,li{box-sizing:border-box;list-style:none;}
 img,fieldset,iframe{border:none;}
 img,input,select{vertical-align:middle;}
@@ -33,18 +33,31 @@ select::-ms-expand {display: none;}
 .alignR{text-align:right;}
 .alignC{text-align:center;}
 
-.font_blue{color:#176899 !important;}
+.font_b{font-weight:bold;}
+.font_skyblue{color:#1994dd !important;}
+.font_blue{color:#156897 !important;}
 
 #wrap{min-width:1420px;}
 .wrap{max-width:1420px;margin:0 auto;padding:0 10px;}
-.con_wrap{min-height:calc(100% - 297px);}
+.con_wrap{min-height:calc(100% - 297px);padding:25px 0 60px;}
 .flex_wrap{display:flex;}
 .f_sb{justify-content:space-between;}
 .f_c{justify-content:center;}
 
 /* Btn ---- S */
+.btn{padding:5px 10px;}
+.btn_m{}
+.btn_s{}
 .btn_grayline{border:1px solid #cdcdcd;color:#777777;}
 .btn_grayline:hover, .btn_grayline:active{background-color:#cdcdcd;color:#fff;}
+.btn_skyblueline{border:1px solid #1994dd;color:#1994dd;}
+.btn_skyblueline:hover, .btn_skyblueline:active{background-color:#1994dd;color:#fff;}
+.btn_blue{border:transparent;background-color:#156897;color:#fff;}
+.btn_blue:hover, .btn_blue:active{background-color:;color:;}
+.btn_skyblue{border:transparent;background-color:#1994dd;color:#fff;}
+.btn_skyblue:hover, .btn_skyblue:active{background-color:;color:;}
+.btn_black{border:transparent;background-color:#000000;color:#fff;}
+.btn_black:hover, .btn_black:active{background-color:;color:;}
 
 /* Table ---- S */
 .tbl_top{}
@@ -55,12 +68,25 @@ select::-ms-expand {display: none;}
 .tbl_row th,.tbl_row td{}
 .tbl_col th,.tbl_col td{}
 
-/* Input ---- S */
-input[type="text"]{}
-input[type="radio"]{}
-input[type="checkbox"]{}
-input[type="radio"]{}
-input[type='checkbox']{}
+/* select & Input ---- S */
+label{font-size:12px;}
+select option:checked,
+select option:hover{background:#f3f3f3;color:#555;}select option:checked,
+select option:hover{box-shadow:0 0 10px 100px #f3f3f3 inset;color:#555;}
+.checks {position: relative;}
+.checks input[type="radio"] {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;}
+.checks input[type="radio"] + label {display:inline-block;position:relative;padding-left:25px;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;}
+.checks input[type="radio"] + label:before {content:'\f1ac';position:absolute;top:-5px;left:0;font-family:'axicon';font-size:25px;font-weight:lighter;color:#ddd;border:transparent;}
+.checks input[type="radio"]:checked + label:after {content:'\f1ac';position:absolute;top:-5px;left:0;font-family:'axicon';font-size:25px;font-weight:lighter; color:#1994dd;border:transparent;}
+
+/* paginate */
+.paginate{margin-top:30px;text-align:center}
+.paginate a,.paginate strong{display:inline-block;position:relative;_width /**/:14px;min-width:25px;padding:1.5px 5px 2px 4px;color:#333;font-size:15px;line-height:normal;box-sizing:border-box;font-weight:normal;margin:0 3px;font-family:"Malgun Gothic","맑은고딕","AppleSDGothic","Nanum Barun Gothic","NanumGothic","AppleGothic","Dotum","Arial",sans-serif;}
+.paginate .pre,
+.paginate .next,
+.paginate .first,
+.paginate .last{display:inline-flex;justify-content:center;align-items:center;position:relative;top:-2px;_width /**/:47px;width:25px;height:24.5px;color:#777;background-color:#fff;border:1px solid #d7d7d7;margin:0 3px;font-size:9px;font-weight:bold;letter-spacing:-.09em;padding:0;}
+.paginate a:hover,.paginate a:active,.paginate a.on{background-color:#156897;color:#fff;}
 
 /* jquery-ui custom ---- S */
 .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button{font-family:"Malgun Gothic","맑은고딕","AppleSDGothic","Nanum Barun Gothic","NanumGothic","AppleGothic","Dotum","Arial",sans-serif;}
@@ -78,14 +104,15 @@ input[type='checkbox']{}
 /* jqgrid_custom ---- S */
 .ui-jqgrid .jqgrid-multibox .ui-th-div{margin-top:0;}
 .s-ico{display:inline;}
-.ui-jqgrid.ui-corner-all{border-radius:0;border-color:#e8e8e8;border-top:3px solid #005a9e;}
-.ui-jqgrid .ui-jqgrid-hdiv{border-bottom-color:#7facce;border-radius:0;background:transparent;}
+.ui-jqgrid.ui-corner-all{border-radius:0;border-color:#e8e8e8;border-top:3px solid #156897;}
+.ui-jqgrid .ui-jqgrid-hdiv{border-radius:0;background:transparent;}
 .ui-jqgrid .jqgrid-rownum,
 .ui-jqgrid .ui-jqgrid-hbox th{background:#fff;color:#333;font-weight: 600;border-color:#c4cdd3;vertical-align:middle;height:30px;}
 .ui-jqgrid .ui-jqgrid-hbox th[colspan]{background:#e0e6ec;}
 .ui-jqgrid .ui-jqgrid-htable .ui-th-div{margin-top:3px;}
 .ui-jqgrid tr{border-color:#e8e8e8;}
-.ui-jqgrid tr.ui-row-ltr td{text-align:center;border-top:1px solid transparent;}
+.ui-jqgrid tr.ui-row-ltr td{text-align:center;border-top:1px solid transparent;border-right-style:hidden;}
+.ui-th-ltr, .ui-jqgrid .ui-jqgrid-htable th.ui-th-ltr{border-right:hidden;}
 .ui-jqgrid tr.jqgrow td, .ui-jqgrid tr.jqgroup td{height:26px;}
 .ui-jqgrid tr.ui-state-hover{background-color:#f5f6f7;}
 .ui-jqgrid tr.ui-state-hover td{border-top-color:#ccc;}
@@ -115,6 +142,23 @@ input[type='checkbox']{}
 .util_list>li:first-child button{margin-right:5px;}
 
 /* Gnb ---- S */
+.snb_depth1{display:block;width:180px;line-height:48px;padding-left:20px;border:1px solid #ddd;border-bottom:1px solid transparent;}
+.snb_depth1.last{border-bottom:1px solid #ddd;}
+.snb_depth1:hover,.snb_depth1:active,.snb_depth1.on{background-color:#1994dd;color:#fff;border:1px solid transparent;}
+.snb_depth2{display:block;border:2px solid #1994dd;padding-left:20px;}
+.snb_depth2 a{display:block;line-height:38px;color:#f00;}
+.snb_depth2 a:before{position:relative;top:-3px;display:inline-block;content:'';width:4px;height:4px;margin-right:8px;border-radius:5px;}
+.snb_depth2 a:before{background-color:#f00;}
+.snb_depth2 a:hover:before,.snb_depth2 a:active:before,.snb_depth2 a.on:before{background-color:#1994dd;}
+.snb_depth2 a:hover,.snb_depth2 a:active,.snb_depth2 a.on{color:#1994dd;}
+.snb{width:180px;padding-right:30px;}
+.snb a{font-size:14px;}
+.breadcrumb{padding-bottom:25px;text-align:right;}
+.breadcrumb li:first-child a{position:relative;top:-3px;font-size:17px;}
+.breadcrumb li:first-child a::before{display:none;}
+.breadcrumb li{display:inline-block;}
+.breadcrumb a{font-size:13px;vertical-align:top;letter-spacing:-.05em}
+.breadcrumb a::before{content:'\e850';display:inline-block;font-family:'axicon';color:#333;}
 
 /* Footer ---- S */
 .footer{border-bottom:1px solid #cdcdcd;line-height:49px;}
@@ -135,15 +179,32 @@ input[type='checkbox']{}
 .ft_sns{padding-top:21px;}
 .ft_sns a:first-child{padding-right:7px;}
 
-/* check, hover 스타일 설정 IE, Chrome */
-select option:checked,
-select option:hover {
-background: #f3f3f3;
-color: #555;
-}
-/* check, hover 스타일 설정 FireFox */
-select option:checked,
-select option:hover {
-box-shadow: 0 0 10px 100px #f3f3f3 inset;
-color: #555;
-}
+.section_r{width:calc(100% - 210px);}
+.tit_snb{font-size:20px;font-weight:bold;color:#fff;background-color:#22709e; margin-bottom:10px;line-height:120px;}
+.tit_h2{margin-bottom:40px;text-align:left;}
+.tit_h2 h2{padding-bottom:20px;margin-bottom:20px;border-bottom:1px solid #f00;font-size:30px;font-weight:bold;}
+.tit_h2 p{font-size:13px;}
+.search li{display:inline-block;}
+
+/* 대국민 지진정보 */
+/* 지진발생정보 */
+.search_instrumental{padding:20px 15px; border:1px solid #ddd;background-color:#eee;}
+.search_instrumental h3{font-weight:bold;text-align:left;}
+.search_instrumental h3::before{content:'';display:inline-block; width:4px;height:4px;border:4px solid #1994dd;border-radius:50%;margin-right:5px;}
+.info_detail{}
+.info_instrumental{padding-top:15px;}
+
+
+/* 지진행동요령 */
+.search_knowhow{padding:30px 0;border-top:2px solid #22709e;border-bottom:1px solid #f00;margin-bottom:25px;}
+.search_knowhow button{vertical-align:middle;height:33px;}
+.search_knowhow select{height:33px;}
+.search_knowhow input{width:250px;height:33px;}
+.list_knowhow{margin-top:10px;border-top:2px solid #22709e;text-align:left;}
+.list_knowhow li{padding:35px 0;border-bottom:1px solid #F00;}
+.list_knowhow dl{text-align:left;}
+.list_knowhow dt,.list_knowhow dd{display:inline-block;}
+
+/* 국내재난안전포털 */
+.disaster_portal{border-top:2px solid #22709e;}
+.disaster_portal h3{width:245px;margin:50px 0;font-size:18px;}

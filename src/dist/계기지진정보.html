@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="../css/ol/ol.css">
 </head>
 <body>
+
 <body>
   <div id="wrap">
     <div>
@@ -75,40 +76,40 @@
   </nav>
 </div>
     <!-- CONTENTS ---- S -->
-    <div class="con_wrap">
-      <ul>
-        <li><a href="#"><i class="axi axi-home"></i></a></li>
+    <div class="wrap con_wrap">
+      <ul class="breadcrumb">
+        <li><a href="#" class="font_blue"><i class="axi axi-home"></i></a></li>
         <li><a href="#">대국민지진정보</a></li>
         <li><a href="#">지진발생정보</a></li>
         <li><a href="#">계기지진정보</a></li>
       </ul>
       <div class="flex_wrap f_c">
-        <div class="aside">
-          <h2 class="tit_lnb">대국민지진정보</h2>
-          <ul>
+        <div class="snb">
+          <h2 class="tit_snb">대국민 지진정보</h2>
+          <ul class="alignL">
             <li>
-              <a href="#" class="lnb_depth1 on">지진발생정보</a>
-              <ul>
-                <li><a href="#">계기지진 정보</a></li>
+              <a href="#" class="snb_depth1 on">지진발생정보</a>
+              <ul class="snb_depth2">
+                <li><a href="#" class="on">계기지진 정보</a></li>
                 <li><a href="#">역사지진 정보</a></li>
                 <li><a href="#">국외지진 정보</a></li>
               </ul>
             </li>
-            <li><a href="#" class="lnb_depth1">지진행동요령</a></li>
-            <li><a href="#" class="lnb_depth1">지진안정상식</a></li>
-            <li><a href="#" class="lnb_depth1">국내 재난안전 포털</a></li>
-            <li><a href="#" class="lnb_depth1">지진방재사이트</a></li>
+            <li><a href="#" class="snb_depth1">지진행동요령</a></li>
+            <li><a href="#" class="snb_depth1">지진안정상식</a></li>
+            <li><a href="#" class="snb_depth1">국내 재난안전 포털</a></li>
+            <li><a href="#" class="snb_depth1 last">지진방재사이트</a></li>
           </ul>
         </div>
-        <div>
+        <div class="section_r">
           <div class="tit_h2">
             <h2>계기지진정보</h2>
             <p>계기지진은 지진계에 의해 기록된 자료로부터 분석된 지진자료로 20세기 전반부의 초기계지진 자료와 1950년대 이후의 계기지진자료로 구분된다.</p>
           </div>
           <div>
-            <div class="search">
-              <div>
-                <h3>지진정보</h3> 
+            <div class="search search_instrumental">
+              <div class="info_earthquake">
+                <h3>지진정보</h3>
                 <ul>
                   <li>
                     <label for="">발생년도</label>
@@ -146,7 +147,7 @@
                   </li>
                 </ul>
               </div>
-              <div>
+              <div class="info_detail">
                 <h3>상세정보</h3>
                 <ul>
                   <li>
@@ -166,22 +167,40 @@
                     <input type="text">㎞
                   </li>
                 </ul>
+                <p class="font_skyblue">
+                  <i class="axi axi-ion-help-circled"></i>
+                  마커로 특정위치를 선택할 수 있습니다.
+                </p>
               </div>
-              <div>
-                <button type="button">초기화</button>
-                <button type="button">검색</button>
+              <div class="alignR">
+                <button type="button" class="btn btn_black">초기화</button>
+                <button type="button" class="btn btn_skyblue">검색</button>
               </div>
-              <p>
-              <i class="axi axi-ion-help-circled"></i>
-              마커로 특정위치를 선택할 수 있습니다.</p>
             </div>
-            <div class="flex_wrap f_sb">
+            <div class="info_instrumental flex_wrap f_sb">
               <div>
-                <img src="http://placehold.it/320x100">
+                <img src="http://placehold.it/548x693">
               </div>
               <div>
                 <table id="jqGrid"></table>
-                <div class="page"></div>
+                <div class="paginate">
+                  <a href="#" class="first" title="처음">〈〈</a>
+                  <a href="#" class="pre" title="이전">〈</a>
+                  <span>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#" class="on">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a href="#">9</a>
+                    <a href="#">10</a>
+                  </span>
+                  <a href="#" class="next" title="다음">〉</a>
+                  <a href="#" class="last" title="마지막">〉〉</a>
+                </div>
               </div>
             </div>
           </div>
@@ -189,34 +208,30 @@
       </div>
     </div>
     <script>
-    var mydata1 = [
-      { "status": 'unconfirmed', "t1": "", "t2": "", "t3": "", "t4": "", "t5": "", "t6": "", "t7": "" },
-      { "status": 'unconfirmed', "t1": "", "t2": "", "t3": "", "t4": "", "t5": "", "t6": "", "t7": "" },
-      { "status": 'unconfirmed', "t1": "", "t2": "", "t3": "", "t4": "", "t5": "", "t6": "", "t7": "" },
-      { "status": 'unconfirmed', "t1": "", "t2": "", "t3": "", "t4": "", "t5": "", "t6": "", "t7": "" },
-      { "status": 'unconfirmed', "t1": "", "t2": "", "t3": "", "t4": "", "t5": "", "t6": "", "t7": "" },
-      { "status": 'unconfirmed', "t1": "", "t2": "", "t3": "", "t4": "", "t5": "", "t6": "", "t7": "" },
-      { "status": 'unconfirmed', "t1": "", "t2": "", "t3": "", "t4": "", "t5": "", "t6": "", "t7": "" },
-      { "status": 'unconfirmed', "t1": "", "t2": "", "t3": "", "t4": "", "t5": "", "t6": "", "t7": "" }
-    ];
-    $("#jqGrid").jqGrid({
-      data: mydata1,
-      datatype: "local",
-      colModel: [
-        { name: 'status', hidden: true },
-        { label: '번호', name: 't1', width: 100},
-        { label: '발생일시', name: 't2', width: 120 },
-        { label: '규모', name: 't3', width: 100 },
-        { label: '발생깊이(㎞)', name: 't4', width: 150 },
-        { label: '진앙지(위도/경도)', name: 't5', width: 150 },
-        { label: '최대진도', name: 't6', width: 200 }
-      ],
-      viewrecords: true,
-      height: 250,
-      rowNum: 20,
-      gridview: true,
-      pager: "#jqGridPager"
-    });
+      var mydata1 = [
+        { "status": 'unconfirmed', "t1": "", "t2": "", "t3": "", "t4": "", "t5": "", "t6": "", "t7": "" },
+        { "status": 'unconfirmed', "t1": "", "t2": "", "t3": "", "t4": "", "t5": "", "t6": "", "t7": "" },
+        { "status": 'unconfirmed', "t1": "", "t2": "", "t3": "", "t4": "", "t5": "", "t6": "", "t7": "" },
+        { "status": 'unconfirmed', "t1": "", "t2": "", "t3": "", "t4": "", "t5": "", "t6": "", "t7": "" },
+        { "status": 'unconfirmed', "t1": "", "t2": "", "t3": "", "t4": "", "t5": "", "t6": "", "t7": "" }
+      ];
+      $("#jqGrid").jqGrid({
+        data: mydata1,
+        datatype: "local",
+        colModel: [
+          { name: 'status', hidden: true },
+          { label: '번호', name: 't1', width: 40 },
+          { label: '발생일시', name: 't2', width: 110 },
+          { label: '규모', name: 't3', width: 55 },
+          { label: '발생깊이(㎞)', name: 't4', width: 90 },
+          { label: '진앙지(위도/경도)', name: 't5', width: 230 },
+          { label: '최대진도', name: 't6', width: 90 }
+        ],
+        viewrecords: true,
+        height: 603,
+        rowNum: 20,
+        gridview: true
+      });
     </script>
     <!-- CONTENTS ---- E -->
     <footer>
