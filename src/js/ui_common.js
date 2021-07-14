@@ -1,3 +1,29 @@
 $(function(){
-  
+  // gnb
+$(".gnb_wrap").on({
+  mouseenter:function(){
+    $(this).addClass("on");
+    $(".depth2").show();
+  },
+  mouseleave:function(){
+    $(this).removeClass("on");
+    $(".depth2").hide();
+  }
+})
+$(".depth1").on({
+  mouseenter:function(){
+    $(this).next(".depth2").addClass("on");
+  },
+  mouseleave:function(){
+    $(this).next(".depth2").removeClass("on");
+  }
+})
+$(".depth2").on({
+  mouseenter:function(){
+    $(this).prev(".depth1").addClass("on");
+  },
+  mouseleave:function(){
+    $(this).prev(".depth1").removeClass("on");
+  }
+})
 })
