@@ -119,7 +119,7 @@ input[type='checkbox']{}
 .depth1:hover,.depth1:active,.depth1.on{color:#176899;}
 .depth1.active{color:#176899;}
 .depth1:hover::before,.depth1:active::before,.depth1.on::before,.depth1.active::before{position:absolute;bottom:-1px;left:calc(50% - 85px);content:'';display:inline-block;width:100%;height:4px;background-color:#176899;z-index:9999;}
-.depth2{position:absolute;width:170px;height:255px;display:none;transition:0.3s;padding:20px 0;}
+.depth2{position:absolute;width:170px;height:255px;display:none;transition:0.3s;padding:24px 0;}
 .depth2:hover,.depth2:active,.depth2.on{background-color:#f1f8fe;}
 .depth2.active{background-color:#f1f8fe;}
 .depth2 a{display:block;font-size:16px;color:#555;padding:10px 0;}
