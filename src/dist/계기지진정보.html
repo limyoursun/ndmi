@@ -29,11 +29,10 @@
     <div>
   <header class="hd wrap flex_wrap f_sb">
     <h1 class="logo hd_logo">
-      <img src="../images/logo.png" alt="지진방재콘텐츠공유포털 로고 이미지">
-      <p class="font_blue">
-        국립재난안전연구원
-        <span>지진방재 콘텐츠 공유 포털</span>
-      </p>
+      <a href="../dist/main.html">
+        <img src="../images/logo.png" alt="대한민국 정부 상징 이미지">
+        <img src="../images/hd_logo.png" alt="지진방재콘텐츠공유포털 로고 이미지">
+      </a>
     </h1>
     <div class="util">
       <ul class="util_list flex_wrap">
@@ -45,31 +44,35 @@
   <nav class="gnb_wrap">
     <ul class="gnb wrap flex_wrap f_c" role="navigation">
       <li>
-        <a href="#" class="depth1">대국민 지진정보</a>
-        <ul class="depth2">
-          <!-- <li><a href="#"></a></li>
-          <li><a href="#"></a></li>-->
+        <a href="#" class="depth1 on active">대국민 지진정보</a>
+        <ul class="depth2 active">
+          <li><a href="#" class="on">지진발생정보</a></li>
+          <li><a href="#">지진행동요령</a></li>
+          <li><a href="#">지진안전상식</a></li>
+          <li><a href="#">국내 재난안전포털</a></li>
+          <li><a href="#">지진방재 사이트</a></li>
         </ul>
       </li>
       <li>
         <a href="#" class="depth1">지진정책자료</a>
         <ul class="depth2">
-          <!-- <li><a href="#"></a></li>
-          <li><a href="#"></a></li>-->
+          <li><a href="#">지진방재정책</a></li>
+          <li><a href="#">지진대응복구</a></li>
+          <li><a href="#">지진예방대비</a></li>
         </ul>
       </li>
       <li>
         <a href="#" class="depth1">지진학술자료</a>
         <ul class="depth2">
-          <!-- <li><a href="#"></a></li>
-          <li><a href="#"></a></li>-->
+          <li><a href="#">지진방재연구</a></li>
+          <li><a href="#">지진현장조사</a></li>
+          <li><a href="#">실험계측정보</a></li>
         </ul>
       </li>
       <li>
         <a href="#" class="depth1">포털소개</a>
         <ul class="depth2">
-          <!-- <li><a href="#"></a></li>
-          <li><a href="#"></a></li>-->
+          <li><a href="#">포털 소개</a></li>
         </ul>
       </li>
     </ul>
@@ -78,27 +81,27 @@
     <!-- CONTENTS ---- S -->
     <div class="wrap con_wrap">
       <ul class="breadcrumb">
-        <li><a href="#" class="font_blue"><i class="axi axi-home"></i></a></li>
+        <li><a href="../dist/main.html" class="font_blue"></a></li>
         <li><a href="#">대국민지진정보</a></li>
         <li><a href="#">지진발생정보</a></li>
         <li><a href="#">계기지진정보</a></li>
       </ul>
       <div class="flex_wrap f_c">
-        <div class="snb">
+        <div class="snb_wrap section_l">
           <h2 class="tit_snb">대국민 지진정보</h2>
-          <ul class="alignL">
+          <ul class="snb alignL">
             <li>
-              <a href="#" class="snb_depth1 on">지진발생정보</a>
-              <ul class="snb_depth2">
+              <a href="#" class="snb_depth1 on" onclick="return false">지진발생정보</a>
+              <ul class="snb_depth2 on">
                 <li><a href="#" class="on">계기지진 정보</a></li>
                 <li><a href="#">역사지진 정보</a></li>
                 <li><a href="#">국외지진 정보</a></li>
               </ul>
             </li>
-            <li><a href="#" class="snb_depth1">지진행동요령</a></li>
-            <li><a href="#" class="snb_depth1">지진안정상식</a></li>
-            <li><a href="#" class="snb_depth1">국내 재난안전 포털</a></li>
-            <li><a href="#" class="snb_depth1 last">지진방재사이트</a></li>
+            <li><a href="#">지진행동요령</a></li>
+            <li><a href="#">지진안정상식</a></li>
+            <li><a href="#">국내 재난안전 포털</a></li>
+            <li><a href="#">지진방재사이트</a></li>
           </ul>
         </div>
         <div class="section_r">
@@ -109,34 +112,34 @@
           <div>
             <div class="search search_instrumental">
               <div class="info_earthquake">
-                <h3>지진정보</h3>
+                <h3 class="ico_bul">지진정보</h3>
                 <ul>
-                  <li>
+                  <li class="input_60">
                     <label for="">발생년도</label>
-                    <input type="text">년 ~
-                    <input type="text">년
+                    <input type="text"> 년 ~
+                    <input type="text"> 년
                   </li>
-                  <li>
+                  <li class="input_60">
                     <label for="">위도</label>
                     <input type="text"> ~
                     <input type="text">
                   </li>
-                  <li>
+                  <li class="input_60">
                     <label for="">경도</label>
                     <input type="text"> ~
                     <input type="text">
                   </li>
-                  <li>
+                  <li class="input_50">
                     <label for="">발생깊이</label>
                     <input type="text"> ~
-                    <input type="text">㎞
+                    <input type="text"> ㎞
                   </li>
-                  <li>
+                  <li class="input_50">
                     <label for="">규모</label>
                     <input type="text"> ~
                     <input type="text">
                   </li>
-                  <li>
+                  <li class="select_55">
                     <label for="">진도</label>
                     <select name="" id="">
                       <option value="">전체</option>
@@ -148,41 +151,160 @@
                 </ul>
               </div>
               <div class="info_detail">
-                <h3>상세정보</h3>
-                <ul>
-                  <li>
-                    <label for="">진앙지</label>
-                    <input type="text">
-                  </li>
-                  <li>
-                    <label for="">위도</label>
-                    <input type="text">
-                  </li>
-                  <li>
-                    <label for="">경도</label>
-                    <input type="text">
-                  </li>
-                  <li>
-                    <label for="">반경</label>
-                    <input type="text">㎞
-                  </li>
-                </ul>
-                <p class="font_skyblue">
-                  <i class="axi axi-ion-help-circled"></i>
-                  마커로 특정위치를 선택할 수 있습니다.
-                </p>
-              </div>
-              <div class="alignR">
-                <button type="button" class="btn btn_black">초기화</button>
-                <button type="button" class="btn btn_skyblue">검색</button>
+                <h3 class="ico_bul">상세정보</h3>
+                <div class="flex_wrap f_sb">
+                  <ul>
+                    <li class="input_180">
+                      <label for="">진앙지</label>
+                      <input type="text">
+                    </li>
+                    <li class="input_60">
+                      <label for="">위도</label>
+                      <input type="text">
+                    </li>
+                    <li class="input_60">
+                      <label for="">경도</label>
+                      <input type="text">
+                    </li>
+                    <li class="input_50">
+                      <label for="">반경</label>
+                      <input type="text"> ㎞
+                    </li>
+                    <li>
+                      <p class="font_skyblue">
+                        <img src="../images/ico_location.png" alt="지도 아이콘">
+                        <i class="axi axi-ion-help-circled"></i>
+                        마커로 특정위치를 선택할 수 있습니다.
+                      </p>
+                    </li>
+                  </ul>
+                  <span>
+                    <button type="button" class="btn btn_black">초기화</button>
+                    <button type="button" class="btn btn_skyblue">검색</button>
+                  </span>
+                </div>
               </div>
             </div>
             <div class="info_instrumental flex_wrap f_sb">
-              <div>
+              <div class="section_l">
                 <img src="http://placehold.it/548x693">
               </div>
-              <div>
-                <table id="jqGrid"></table>
+              <div class="section_r">
+                <table class="tbl_list tbl_instrumental">
+                  <caption>계기지진정보</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col" width="50">번호</th>
+                      <th width="90">발생일시</th>
+                      <th width="50">규모</th>
+                      <th width="80">발생깊이(㎞)</th>
+                      <th width="">진앙지(위도/경도)</th>
+                      <th width="100">최대진도</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1864</td>
+                      <td>2020.09.20.<br>01:22:14</td>
+                      <td>2.2</td>
+                      <td>17</td>
+                      <td>전남 신안군 흑산도 남남서쪽 62km 해역<br>(36.51/ 127.41)</td>
+                      <td>최대진도Ⅱ
+                        <span class="tooltip">최대진도Ⅱ (전남)</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1864</td>
+                      <td>2020.09.20.<br>01:22:14</td>
+                      <td>2.2</td>
+                      <td>17</td>
+                      <td>전남 신안군 흑산도 남남서쪽 62km 해역<br>(36.51/ 127.41)</td>
+                      <td>최대진도Ⅱ
+                        <span class="tooltip">최대진도Ⅱ (전남)</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1864</td>
+                      <td>2020.09.20.<br>01:22:14</td>
+                      <td>2.2</td>
+                      <td>17</td>
+                      <td>전남 신안군 흑산도 남남서쪽 62km 해역<br>(36.51/ 127.41)</td>
+                      <td>최대진도Ⅱ
+                        <span class="tooltip">최대진도Ⅱ (전남)</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1864</td>
+                      <td>2020.09.20.<br>01:22:14</td>
+                      <td>2.2</td>
+                      <td>17</td>
+                      <td>전남 신안군 흑산도 남남서쪽 62km 해역<br>(36.51/ 127.41)</td>
+                      <td>최대진도Ⅱ
+                        <span class="tooltip">최대진도Ⅱ (전남)</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1864</td>
+                      <td>2020.09.20.<br>01:22:14</td>
+                      <td>2.2</td>
+                      <td>17</td>
+                      <td>전남 신안군 흑산도 남남서쪽 62km 해역<br>(36.51/ 127.41)</td>
+                      <td>최대진도Ⅱ
+                        <span class="tooltip">최대진도Ⅱ (전남)</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1864</td>
+                      <td>2020.09.20.<br>01:22:14</td>
+                      <td>2.2</td>
+                      <td>17</td>
+                      <td>전남 신안군 흑산도 남남서쪽 62km 해역<br>(36.51/ 127.41)</td>
+                      <td>최대진도Ⅱ
+                        <span class="tooltip">최대진도Ⅱ (전남)</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1864</td>
+                      <td>2020.09.20.<br>01:22:14</td>
+                      <td>2.2</td>
+                      <td>17</td>
+                      <td>전남 신안군 흑산도 남남서쪽 62km 해역<br>(36.51/ 127.41)</td>
+                      <td>최대진도Ⅱ
+                        <span class="tooltip">최대진도Ⅱ (전남)</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1864</td>
+                      <td>2020.09.20.<br>01:22:14</td>
+                      <td>2.2</td>
+                      <td>17</td>
+                      <td>전남 신안군 흑산도 남남서쪽 62km 해역<br>(36.51/ 127.41)</td>
+                      <td>최대진도Ⅱ
+                        <span class="tooltip">최대진도Ⅱ (전남)</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1864</td>
+                      <td>2020.09.20.<br>01:22:14</td>
+                      <td>2.2</td>
+                      <td>17</td>
+                      <td>전남 신안군 흑산도 남남서쪽 62km 해역<br>(36.51/ 127.41)</td>
+                      <td>최대진도Ⅱ
+                        <span class="tooltip">최대진도Ⅱ (전남)</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1864</td>
+                      <td>2020.09.20.<br>01:22:14</td>
+                      <td>2.2</td>
+                      <td>17</td>
+                      <td>전남 신안군 흑산도 남남서쪽 62km 해역<br>(36.51/ 127.41)</td>
+                      <td>최대진도Ⅱ
+                        <span class="tooltip">최대진도Ⅱ (전남)</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
                 <div class="paginate">
                   <a href="#" class="first" title="처음">〈〈</a>
                   <a href="#" class="pre" title="이전">〈</a>
@@ -207,32 +329,6 @@
         </div>
       </div>
     </div>
-    <script>
-      var mydata1 = [
-        { "status": 'unconfirmed', "t1": "", "t2": "", "t3": "", "t4": "", "t5": "", "t6": "", "t7": "" },
-        { "status": 'unconfirmed', "t1": "", "t2": "", "t3": "", "t4": "", "t5": "", "t6": "", "t7": "" },
-        { "status": 'unconfirmed', "t1": "", "t2": "", "t3": "", "t4": "", "t5": "", "t6": "", "t7": "" },
-        { "status": 'unconfirmed', "t1": "", "t2": "", "t3": "", "t4": "", "t5": "", "t6": "", "t7": "" },
-        { "status": 'unconfirmed', "t1": "", "t2": "", "t3": "", "t4": "", "t5": "", "t6": "", "t7": "" }
-      ];
-      $("#jqGrid").jqGrid({
-        data: mydata1,
-        datatype: "local",
-        colModel: [
-          { name: 'status', hidden: true },
-          { label: '번호', name: 't1', width: 40 },
-          { label: '발생일시', name: 't2', width: 110 },
-          { label: '규모', name: 't3', width: 55 },
-          { label: '발생깊이(㎞)', name: 't4', width: 90 },
-          { label: '진앙지(위도/경도)', name: 't5', width: 230 },
-          { label: '최대진도', name: 't6', width: 90 }
-        ],
-        viewrecords: true,
-        height: 603,
-        rowNum: 20,
-        gridview: true
-      });
-    </script>
     <!-- CONTENTS ---- E -->
     <footer>
   <div class="footer">
@@ -262,17 +358,18 @@
             <option value="국내지진방재 관련사이트">국내지진방재 관련사이트</option>
           </select>
         </li>
+        <li class="ft_sns">
+          <a href="https://www.facebook.com/NDMIKorea/"><img src="../images/ico_facebook.png" alt="페이스북 아이콘 이미지"></a>
+          <a href="https://www.youtube.com/channel/UCZqKqkyEkGcFYotEBzEIjiQ"><img src="../images/ico_youtube.png" alt="유튜브 아이콘 이미지"></a>
+        </li>
       </ul>
     </div>
   </div>
   <div class="wrap flex_wrap f_sb">
     <div class="flex_wrap alignL">
       <h1 class="logo ft_logo">
-        <img src="../images/logo.png" alt="국립재난연구원 로고 이미지">
-        <p>
-          행정안전부
-          <span>국립재난안전연구원</span>
-        </p>
+        <img src="../images/logo.png" alt="대한민국 정부 상징 이미지">
+        <img src="../images/ft_logo.png" alt="국립재난연구원 로고 이미지">
       </h1>
       <address class="addr">
         <p>우) 44538 울산광역시 중구 종가로 365 국립재난안전연구원</p>
@@ -284,10 +381,6 @@
           Copyright &copy; 2021 by National Disaster Management Research Institute. All Rights Reserved.
         </p>
       </address>
-    </div>
-    <div class="ft_sns">
-      <a href="#"><img src="../images/ico_facebook.png" alt="페이스북 아이콘 이미지"></a>
-      <a href="#"><img src="../images/ico_youtube.png" alt="유튜브 아이콘 이미지"></a>
     </div>
   </div>
 </footer>

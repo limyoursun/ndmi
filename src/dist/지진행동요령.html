@@ -29,11 +29,10 @@
     <div>
   <header class="hd wrap flex_wrap f_sb">
     <h1 class="logo hd_logo">
-      <img src="../images/logo.png" alt="지진방재콘텐츠공유포털 로고 이미지">
-      <p class="font_blue">
-        국립재난안전연구원
-        <span>지진방재 콘텐츠 공유 포털</span>
-      </p>
+      <a href="../dist/main.html">
+        <img src="../images/logo.png" alt="대한민국 정부 상징 이미지">
+        <img src="../images/hd_logo.png" alt="지진방재콘텐츠공유포털 로고 이미지">
+      </a>
     </h1>
     <div class="util">
       <ul class="util_list flex_wrap">
@@ -45,31 +44,35 @@
   <nav class="gnb_wrap">
     <ul class="gnb wrap flex_wrap f_c" role="navigation">
       <li>
-        <a href="#" class="depth1">대국민 지진정보</a>
-        <ul class="depth2">
-          <!-- <li><a href="#"></a></li>
-          <li><a href="#"></a></li>-->
+        <a href="#" class="depth1 on active">대국민 지진정보</a>
+        <ul class="depth2 active">
+          <li><a href="#" class="on">지진발생정보</a></li>
+          <li><a href="#">지진행동요령</a></li>
+          <li><a href="#">지진안전상식</a></li>
+          <li><a href="#">국내 재난안전포털</a></li>
+          <li><a href="#">지진방재 사이트</a></li>
         </ul>
       </li>
       <li>
         <a href="#" class="depth1">지진정책자료</a>
         <ul class="depth2">
-          <!-- <li><a href="#"></a></li>
-          <li><a href="#"></a></li>-->
+          <li><a href="#">지진방재정책</a></li>
+          <li><a href="#">지진대응복구</a></li>
+          <li><a href="#">지진예방대비</a></li>
         </ul>
       </li>
       <li>
         <a href="#" class="depth1">지진학술자료</a>
         <ul class="depth2">
-          <!-- <li><a href="#"></a></li>
-          <li><a href="#"></a></li>-->
+          <li><a href="#">지진방재연구</a></li>
+          <li><a href="#">지진현장조사</a></li>
+          <li><a href="#">실험계측정보</a></li>
         </ul>
       </li>
       <li>
         <a href="#" class="depth1">포털소개</a>
         <ul class="depth2">
-          <!-- <li><a href="#"></a></li>
-          <li><a href="#"></a></li>-->
+          <li><a href="#">포털 소개</a></li>
         </ul>
       </li>
     </ul>
@@ -83,21 +86,21 @@
         <li><a href="#">지진행동요령</a></li>
       </ul>
       <div class="flex_wrap f_c">
-        <div class="snb">
+        <div class="snb_wrap section_l">
           <h2 class="tit_snb">대국민 지진정보</h2>
-          <ul class="alignL">
+          <ul class="alignL" id="snb">
             <li>
-              <a href="#" class="snb_depth1">지진발생정보</a>
-              <ul class="snb_depth2">
-                <li><a href="#" class="on">계기지진 정보</a></li>
+              <a href="#" class="on" onclick="return false">지진발생정보</a>
+              <ul>
+                <li><a href="#" class="active">계기지진 정보</a></li>
                 <li><a href="#">역사지진 정보</a></li>
                 <li><a href="#">국외지진 정보</a></li>
               </ul>
             </li>
-            <li><a href="#" class="snb_depth1 on">지진행동요령</a></li>
-            <li><a href="#" class="snb_depth1">지진안정상식</a></li>
-            <li><a href="#" class="snb_depth1">국내 재난안전 포털</a></li>
-            <li><a href="#" class="snb_depth1 last">지진방재사이트</a></li>
+            <li><a href="#">지진행동요령</a></li>
+            <li><a href="#">지진안정상식</a></li>
+            <li><a href="#">국내 재난안전 포털</a></li>
+            <li><a href="#">지진방재사이트</a></li>
           </ul>
         </div>
         <div class="section_r">
@@ -107,41 +110,53 @@
               것이다.<br>현장에서 실제로 활용할 수 있도록 평소부터 행동요령을 숙지하고 있는 것이 중요하다.</p>
           </div>
           <div>
-            <div class="search search_knowhow">
-              <select name="sort_align" title="정렬방법 선택">
-                <option value="정렬">정렬</option>
-                <option value="최신순">최신순</option>
-                <option value="조회순">조회순</option>
-                <option value="업데이트순">업데이트순</option>
-                <option value="다운로드순">다운로드순</option>
-              </select>
-              <select name="sort_range" title="검색범위 선택">
-                <option value="전체">전체</option>
-              </select>
-              <input type="text" placeholder="검색어를 입력하세요">
-              <button type="button" class="btn btn_blue">검색</button>
-            </div>
+            <ul class="search search_knowhow">
+              <li>
+                <select name="sort_align" title="정렬방법 선택">
+                  <option value="정렬">정렬</option>
+                  <option value="최신순">최신순</option>
+                  <option value="조회순">조회순</option>
+                  <option value="업데이트순">업데이트순</option>
+                  <option value="다운로드순">다운로드순</option>
+                </select>
+              </li>
+              <li>
+                <select name="sort_range" title="검색범위 선택">
+                  <option value="제목 + 내용">제목 + 내용</option>
+                </select>
+              </li>
+              <li>
+                <input type="text" placeholder="검색어를 입력하세요">
+              </li>
+              <li>
+                <button type="button" class="btn_search btn_blue">검색</button>
+              </li>
+              <li>
+                <input type="checkbox" id="Research">
+                <label for="Research">결과 내 재검색</label>
+              </li>
+            </ul>
             <div class="result_knowhow">
-              <div class="flex_wrap f_sb">
+              <div class="result_knowhow_top flex_wrap f_sb">
                 <div>
                   <input type="checkbox" id="select_all">
                   <label for="select_all">전체선택</label>
-                  <button type="button" class="btn btn_skyblueline">첨부파일 다운로드</button>
-                  <button type="button" class="btn btn_skyblueline">엑셀파일 다운로드</button>
+                  <button type="button" class="btn btn_skyblueline ico_download attachment">첨부파일</button>
+                  <button type="button" class="btn btn_greenline ico_download excel">엑셀파일</button>
                 </div>
                 <p>
-                  총<span class="font_skyblue font_b">300</span>개 <span class="font_skyblue font_b">1</span>/10페이지
+                  총<span class="font_skyblue font_b">500</span>개 &nbsp;<span class="font_skyblue font_b">1</span>/10페이지
                 </p>
               </div>
               <ul class="list_knowhow">
                 <li>
                   <input type="checkbox">
                   <span>
-                    <img src="http://placehold.it/125x123" alt="지진국민행동요령 표지 이미지">
+                    <img src="http://placehold.it/100x96" alt="지진국민행동요령 표지 이미지">
                   </span>
                   <span>
                     <p>지진행동요령</p>
-                    <b>지진 국민행동요령</b>
+                    <b class="ico_pdf">지진 국민행동요령</b>
                     <dl>
                       <dt>발행일</dt>
                       <dd>2019년 12월</dd>
@@ -155,11 +170,11 @@
                 <li>
                   <input type="checkbox">
                   <span>
-                    <img src="http://placehold.it/125x123" alt="지진과 지진해일(초등학교 고학년) 표지 이미지">
+                    <img src="http://placehold.it/100x96" alt="지진과 지진해일(초등학교 고학년) 표지 이미지">
                   </span>
                   <span>
                     <p>지진행동요령</p>
-                    <b>지진과 지진해일(초등학교 고학년)</b>
+                    <b class="ico_png">지진과 지진해일(초등학교 고학년)</b>
                     <dl>
                       <dt>발행일</dt>
                       <dd>2019년 12월</dd>
@@ -173,11 +188,137 @@
                 <li>
                   <input type="checkbox">
                   <span>
-                    <img src="http://placehold.it/125x123" alt="지진국민행동요령 전체통합본(영상) 표지 이미지">
+                    <img src="http://placehold.it/100x96" alt="지진국민행동요령 전체통합본(영상) 표지 이미지">
                   </span>
                   <span>
                     <p>지진행동요령</p>
-                    <b>지진국민행동요령 전체통합본(영상)</b>
+                    <b class="ico_mp4">지진국민행동요령 전체통합본(영상)</b>
+                    <dl>
+                      <dt>발행일</dt>
+                      <dd>2019년 12월</dd>
+                      <dt>발행기관</dt>
+                      <dd>행정안전부 국립재난안전연구원</dd>
+                      <dt>조회수</dt>
+                      <dd>1,004</dd>
+                    </dl>
+                  </span>
+                </li>
+                <li>
+                  <input type="checkbox">
+                  <span>
+                    <img src="http://placehold.it/100x96" alt="지진국민행동요령 전체통합본(영상) 표지 이미지">
+                  </span>
+                  <span>
+                    <p>지진행동요령</p>
+                    <b class="ico_zip">지진국민행동요령 전체통합본(영상)</b>
+                    <dl>
+                      <dt>발행일</dt>
+                      <dd>2019년 12월</dd>
+                      <dt>발행기관</dt>
+                      <dd>행정안전부 국립재난안전연구원</dd>
+                      <dt>조회수</dt>
+                      <dd>1,004</dd>
+                    </dl>
+                  </span>
+                </li>
+                <li>
+                  <input type="checkbox">
+                  <span>
+                    <img src="http://placehold.it/100x96" alt="지진국민행동요령 전체통합본(영상) 표지 이미지">
+                  </span>
+                  <span>
+                    <p>지진행동요령</p>
+                    <b class="ico_swf">지진국민행동요령 전체통합본(영상)</b>
+                    <dl>
+                      <dt>발행일</dt>
+                      <dd>2019년 12월</dd>
+                      <dt>발행기관</dt>
+                      <dd>행정안전부 국립재난안전연구원</dd>
+                      <dt>조회수</dt>
+                      <dd>1,004</dd>
+                    </dl>
+                  </span>
+                </li>
+                <li>
+                  <input type="checkbox">
+                  <span>
+                    <img src="http://placehold.it/100x96" alt="지진국민행동요령 표지 이미지">
+                  </span>
+                  <span>
+                    <p>지진행동요령</p>
+                    <b class="ico_pdf">지진 국민행동요령</b>
+                    <dl>
+                      <dt>발행일</dt>
+                      <dd>2019년 12월</dd>
+                      <dt>발행기관</dt>
+                      <dd>행정안전부</dd>
+                      <dt>조회수</dt>
+                      <dd>2,221</dd>
+                    </dl>
+                  </span>
+                </li>
+                <li>
+                  <input type="checkbox">
+                  <span>
+                    <img src="http://placehold.it/100x96" alt="지진과 지진해일(초등학교 고학년) 표지 이미지">
+                  </span>
+                  <span>
+                    <p>지진행동요령</p>
+                    <b class="ico_png">지진과 지진해일(초등학교 고학년)</b>
+                    <dl>
+                      <dt>발행일</dt>
+                      <dd>2019년 12월</dd>
+                      <dt>발행기관</dt>
+                      <dd>소방방재청</dd>
+                      <dt>조회수</dt>
+                      <dd>1,257</dd>
+                    </dl>
+                  </span>
+                </li>
+                <li>
+                  <input type="checkbox">
+                  <span>
+                    <img src="http://placehold.it/100x96" alt="지진국민행동요령 전체통합본(영상) 표지 이미지">
+                  </span>
+                  <span>
+                    <p>지진행동요령</p>
+                    <b class="ico_mp4">지진국민행동요령 전체통합본(영상)</b>
+                    <dl>
+                      <dt>발행일</dt>
+                      <dd>2019년 12월</dd>
+                      <dt>발행기관</dt>
+                      <dd>행정안전부 국립재난안전연구원</dd>
+                      <dt>조회수</dt>
+                      <dd>1,004</dd>
+                    </dl>
+                  </span>
+                </li>
+                <li>
+                  <input type="checkbox">
+                  <span>
+                    <img src="http://placehold.it/100x96" alt="지진국민행동요령 전체통합본(영상) 표지 이미지">
+                  </span>
+                  <span>
+                    <p>지진행동요령</p>
+                    <b class="ico_zip">지진국민행동요령 전체통합본(영상)</b>
+                    <dl>
+                      <dt>발행일</dt>
+                      <dd>2019년 12월</dd>
+                      <dt>발행기관</dt>
+                      <dd>행정안전부 국립재난안전연구원</dd>
+                      <dt>조회수</dt>
+                      <dd>1,004</dd>
+                    </dl>
+                  </span>
+                </li>
+                <li>
+                  <input type="checkbox">
+                  <span>
+                    <img src="http://placehold.it/100x96" alt="지진국민행동요령 전체통합본(영상) 표지 이미지">
+                  </span>
+                  <span>
+                    <p>지진행동요령</p>
+                    <b class="ico_swf">지진국민행동요령 전체통합본(영상)</b>
                     <dl>
                       <dt>발행일</dt>
                       <dd>2019년 12월</dd>
@@ -189,13 +330,17 @@
                   </span>
                 </li>
               </ul>
-              <div>
-                <input type="checkbox">
-                <label for="">전체선택</label>
-                <button type="button">첨부파일 다운로드</button>
-                <button type="button">엑셀파일 다운로드</button>
+              <div class="result_knowhow_top flex_wrap f_sb">
+                <div>
+                  <input type="checkbox" id="select_all2">
+                  <label for="select_all2">전체선택</label>
+                  <button type="button" class="btn btn_skyblueline ico_download attachment">첨부파일</button>
+                  <button type="button" class="btn btn_greenline ico_download excel">엑셀파일</button>
+                </div>
+                <p>
+                  총<span class="font_skyblue font_b">500</span>개 &nbsp;<span class="font_skyblue font_b">1</span>/10페이지
+                </p>
               </div>
-
               <!-- 페이징~~~ 징징윙윙 -->
             </div>
           </div>
@@ -231,17 +376,18 @@
             <option value="국내지진방재 관련사이트">국내지진방재 관련사이트</option>
           </select>
         </li>
+        <li class="ft_sns">
+          <a href="https://www.facebook.com/NDMIKorea/"><img src="../images/ico_facebook.png" alt="페이스북 아이콘 이미지"></a>
+          <a href="https://www.youtube.com/channel/UCZqKqkyEkGcFYotEBzEIjiQ"><img src="../images/ico_youtube.png" alt="유튜브 아이콘 이미지"></a>
+        </li>
       </ul>
     </div>
   </div>
   <div class="wrap flex_wrap f_sb">
     <div class="flex_wrap alignL">
       <h1 class="logo ft_logo">
-        <img src="../images/logo.png" alt="국립재난연구원 로고 이미지">
-        <p>
-          행정안전부
-          <span>국립재난안전연구원</span>
-        </p>
+        <img src="../images/logo.png" alt="대한민국 정부 상징 이미지">
+        <img src="../images/ft_logo.png" alt="국립재난연구원 로고 이미지">
       </h1>
       <address class="addr">
         <p>우) 44538 울산광역시 중구 종가로 365 국립재난안전연구원</p>
@@ -253,10 +399,6 @@
           Copyright &copy; 2021 by National Disaster Management Research Institute. All Rights Reserved.
         </p>
       </address>
-    </div>
-    <div class="ft_sns">
-      <a href="#"><img src="../images/ico_facebook.png" alt="페이스북 아이콘 이미지"></a>
-      <a href="#"><img src="../images/ico_youtube.png" alt="유튜브 아이콘 이미지"></a>
     </div>
   </div>
 </footer>
