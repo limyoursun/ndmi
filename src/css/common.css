@@ -45,13 +45,14 @@ select::-ms-expand {display: none;}
 .f_c{justify-content:center;}
 
 /* Btn */
-.btn{padding:3px 8px;font-size:13px;}
+.btn_comM{padding:3px 8px;font-size:13px;}
+.btn_com{padding:4px 12px;font-size:13px;}
 .btn_search{width:61px;height:34px;padding:6px 8px 9px 6px;font-size:14px;font-weight:bold;letter-spacing:-1.4px;}
-.btn_grayline{border:1px solid #cdcdcd;color:#777777;}
+.btn_grayline{border:1px solid #cdcdcd;background-color:#fff;color:#777777;}
 .btn_grayline:hover, .btn_grayline:active{background-color:#cdcdcd;color:#fff;}
-.btn_skyblueline{border:1px solid #1994dd;color:#1994dd;}
+.btn_skyblueline{border:1px solid #1994dd;background-color:#fff;color:#1994dd;}
 .btn_skyblueline:hover, .btn_skyblueline:active{background-color:#1994dd;color:#fff;}
-.btn_greenline{border:1px solid #15981c;color:#15981c;}
+.btn_greenline{border:1px solid #15981c;background-color:#fff;color:#15981c;}
 .btn_greenline:hover, .btn_greenline:active{background-color:#15981c;color:#fff;}
 .btn_blue{border:transparent;background-color:#156897;color:#fff;}
 
@@ -67,6 +68,7 @@ select::-ms-expand {display: none;}
 .ico_download::after{content:'';display:inline-block;width:13px;height:12px;background:url(../images/ico_dowmload.png) no-repeat;margin-left:10px;}
 .ico_download.excel::after{background-position-y:50%;}
 .ico_download:hover::after,.ico_download:active::after{background-position-y:100%;}
+
 
 /* Table */
 .tbl_list{border-top:2px solid #367fa9;}
@@ -191,7 +193,7 @@ select option:hover{box-shadow:0 0 10px 100px #f3f3f3 inset;color:#555;}
 .tit_snb{font-size:20px;font-weight:bold;color:#fff;background:url(../images/bg_tit_snb.png)no-repeat; margin-bottom:10px;line-height:120px;}
 .tit_h2{margin-bottom:40px;text-align:left;}
 .tit_h2 h2{padding-bottom:20px;margin-bottom:20px;border-bottom:1px solid #b2b2b2;font-size:30px;font-weight:bold;color:#000;}
-.tit_h2 p{font-size:14px;line-height:20px;}
+.tit_h2 p{font-size:15px;line-height:20px;letter-spacing:-0.9px;}
 .search li{display:inline-block;}
 
 /* 대국민 지진정보 */
@@ -230,11 +232,13 @@ select option:hover{box-shadow:0 0 10px 100px #f3f3f3 inset;color:#555;}
 .search_knowhow label{font-size:14px;color:#8a8a8a;letter-spacing: -1.4px;}
 .result_knowhow label{margin-right:10px;font-size:14px;color:#8a8a8a;}
 .result_knowhow button{margin-right:3px;}
-.list_knowhow{margin-top:10px;border-top:2px solid #22709e;text-align:left;}
-.list_knowhow li{padding:35px 0;border-bottom:1px solid #dfdfdf;}
-.list_knowhow dl{text-align:left;}
-.list_knowhow dt,.list_knowhow dd{display:inline-block;}
-.list_knowhow img{margin:0 22px;}
+.list_knowhow{margin:10px 0 9px;border-top:2px solid #22709e;text-align:left;}
+.list_knowhow li{padding:34px 0 33px;border-bottom:1px solid #dfdfdf;}
+.list_knowhow input,.list_knowhow span{vertical-align:top;}
+.list_knowhow i{vertical-align:inherit;}
+.list_knowhow dl{padding-top:35px;text-align:left;}
+.list_knowhow dt,.list_knowhow dd{display:inline-block;font-size:14px;}
+.list_knowhow img{margin:0 22px;border:1px solid #b2b2b2;}
 .list_knowhow p{font-size:14px;color:#777;}
 .list_knowhow b{padding-bottom:6px;font-size:20px;font-weight:bold;color:#000;}
 .list_knowhow dt{color:#999999;}
@@ -244,3 +248,94 @@ select option:hover{box-shadow:0 0 10px 100px #f3f3f3 inset;color:#555;}
 /* 국내재난안전포털 */
 .disaster_portal{border-top:2px solid #22709e;}
 .disaster_portal h3{width:245px;margin:50px 0;font-size:18px;}
+
+/* 지진현장조사 */
+#tabs{position:relative;}
+#tabs .section_l{display:inline-block;width:581px;}
+#tabs .section_r{display:inline-block;width:calc(100% - 615px);margin-left:34px; vertical-align:top;}
+.ui-widget.ui-widget-content{border:none;}
+.tit_tabs{position:absolute;top:0;left:0;}
+.search_eq h3{font-size:18px;font-weight:bold;color:#176899;text-align:left;}
+.tit_damage{height:55px;align-items: center;}
+.tit_damage h3{display:inline-block;font-size:16px;font-weight:bold;color:#000;text-align:left;}
+.tit_damage h3::before{position:relative;top:6px;content:'';display:inline-block;width:21px;height:25px;padding-right:5px;background:url(../images/ico_eq.png)no-repeat;}
+.tit_damage button{position:relative;height:31px;padding:0 81px 0 25px;background-color:#1a94dd;font-size:13px;font-weight:bold;color:#fff;letter-spacing:-0.98px;}
+.tit_damage button::after{position:absolute;top:calc(50% - 6px);right:16px;content:'';display:inline-block;width:49px;height:6px; background:url(../images/bg_quick.png)no-repeat;}
+.map_damage{border:1px solid #555555;}
+.search_eq{border-top:2px solid #176899;border-bottom:1px solid #eee;padding:33px 0 48px;}
+.search_eq ul{overflow:hidden;width:100%;white-space: nowrap;}
+.search_eq li{display:inline-block;width:240px;height:90px;padding:20px 0;border:1px solid #dddddd;}
+.info_damage{text-align:left;}
+.info_damage h4::before{position:absolute;top:4px;left:-18px;content:'';display:inline-block;width:6px;height:6px;margin-right:4px;border:4px solid #1a94dd;border-radius:50%;}
+.info_damage ul>li:first-child h4{margin-top:0;}
+.info_damage h4{position:relative;font-size:16px;font-weight:bold;color:#1a94dd;margin:35px 0 12px;}
+.info_damage dd, .info_damage dt{display:inline-block;font-size:14px;letter-spacing: -0.35px;line-height: 1.79;}
+.info_damage dt{font-weight:bold;}
+.info_damage dt::before{content:'-';display:inline-block;margin-right:4px;}
+.info_damage p{font-size:14px;color:#555;line-height:25px;}
+.datail_damage{width:582px;height:220px;border:1px solid #b2b2b2;}
+
+/* ico_fileName Extention */
+.ico_ext{display:inline-block;width:17px;height:17px;background:url(../images/ico_fileExt.png) -223px -82px no-repeat;margin:0 7px;vertical-align:middle;font-size:0;line-height:0;}
+.ext_bmp{background-position:-3px -2px;}
+.ext_jpg{background-position:-23px -2px;}
+.ext_gif{background-position:-43px -2px;}
+.ext_png{background-position:-63px -2px;}
+.ext_tif{background-position:-83px -2px;}
+.ext_pdf{background-position:-103px -2px;}
+.ext_ppt{background-position:-123px -2px;}
+.ext_ai {background-position:-143px -2px;}
+.ext_xls{background-position:-163px -2px;}
+.ext_psd{background-position:-183px -2px;}
+.ext_doc{background-position:-3px -22px;}
+.ext_hwp{background-position:-23px -22px;}
+.ext_txt{background-position:-43px -22px;}
+.ext_c  {background-position:-63px -22px;}
+.ext_cpp{background-position:-83px -22px;}
+.ext_jav{background-position:-103px -22px;}
+.ext_htm{background-position:-123px -22px;}
+.ext_css{background-position:-143px -22px;}
+.ext_js {background-position:-163px -22px;}
+.ext_log{background-position:-183px -22px;}
+.ext_m4a{background-position:-203px -22px;}
+.ext_swf{background-position:-223px -22px;}
+.ext_au {background-position:-3px -42px;}
+.ext_mid{background-position:-23px -42px;}
+.ext_mod{background-position:-43px -42px;}
+.ext_mp2{background-position:-63px -42px;}
+.ext_mp3{background-position:-83px -42px;}
+.ext_ogg{background-position:-103px -42px;}
+.ext_ra {background-position:-123px -42px;}
+.ext_rm {background-position:-143px -42px;}
+.ext_snd{background-position:-163px -42px;}
+.ext_voc{background-position:-183px -42px;}
+.ext_wav{background-position:-203px -42px;}
+.ext_wma{background-position:-223px -42px;}
+.ext_avi{background-position:-3px -62px;}
+.ext_mov{background-position:-23px -62px;}
+.ext_mpg{background-position:-43px -62px;}
+.ext_mv {background-position:-63px -62px;}
+.ext_asf{background-position:-83px -62px;}
+.ext_asx{background-position:-103px -62px;}
+.ext_qt {background-position:-123px -62px;}
+.ext_rv {background-position:-143px -62px;}
+.ext_wmx{background-position:-163px -62px;}
+.ext_mp4{background-position:-183px -62px;}
+.ext_fla{background-position:-203px -62px;}
+.ext_flv{background-position:-223px -62px;}
+.ext_alz{background-position:-3px -82px;}
+.ext_arj{background-position:-23px -82px;}
+.ext_bzz{background-position:-43px -82px;}
+.ext_egg{background-position:-63px -82px;}
+.ext_gz {background-position:-83px -82px;}
+.ext_jar{background-position:-103px -82px;}
+.ext_rar{background-position:-123px -82px;}
+.ext_tar{background-position:-143px -82px;}
+.ext_tgz{background-position:-163px -82px;}
+.ext_zip{background-position:-183px -82px;}
+.ext_7z {background-position:-203px -82px;}
+.ext_etc{background-position:-223px -82px;}
+.ext_html{background-position:-3px -102px;}
+.ext_wmv {background-position:-23px -102px;}
+.ext_wvz {background-position:-43px -102px;}
+.ext_bzs {background-position:-63px -102px;}
