@@ -268,7 +268,7 @@ select option:hover{box-shadow:0 0 10px 100px #f3f3f3 inset;color:#555;}
 /* 국내재난안전포털 */
 .eqinfo_04 .info_damage{display:inline-block;width:calc(100% - 552px);margin:0 35px 0 35px;}
 .disaster_portal{padding:31px 0;border-top:2px solid #22709e;border-bottom:1px solid #eee;}
-.eqinfo_04 .ico_area{margin:20px 0 11px;}
+.eqinfo_04 .ico_area{margin:20px 0 17px;}
 .disaster_portal h3{width:244px;border-right:1px solid #eee; font-size:18px;font-weight:bold;color:#176899;line-height:66px;}
 .disaster_portal ul{width:calc(100% - 244px);flex-wrap:wrap;align-content: space-between;padding-left:38px; }
 .disaster_portal li{text-align:left;}
