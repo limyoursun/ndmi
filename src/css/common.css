@@ -18,7 +18,10 @@ button{display:inline-block;border:none;cursor:pointer;box-sizing:border-box;bac
 .block,.block div{display:block;}
 input[type="text"],input[type="password"],textarea,select{height:25px;border:1px solid #cccccc;color:#555;background-color:rgba(255,255,255,.9);vertical-align:middle;padding:0 5px;box-sizing:border-box;}
 input[type=checkbox]{width:15px;height:14px;}
+
 select{min-width:50px;padding-right:20px;background:url(../images/btn_select.png) right 5px center no-repeat, rgba(255,255,255,.9);;-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+
+.footer select{min-width:50px;padding-right:20px;background:url(../images/btn_ft_select.png) right 5px center no-repeat, rgba(255,255,255,.9);;-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 select::-ms-expand {display: none;}
 
 /* Common */
@@ -64,7 +67,8 @@ select::-ms-expand {display: none;}
 .btn_black:hover, .btn_black:active{background-color:;color:;}
 
 /* icon */
-.ico_bul::before{position:relative;top:1px;content:'';display:inline-block;background:url(../images/ico_circle.png)no-repeat;width:12px;height:12px;margin-right:5px;}
+.ico_circle::before{position:relative;top:1px;content:'';display:inline-block;background:url(../images/ico_circle.png)left bottom no-repeat;width:12px;height:12px;margin-right:5px;}
+.ico_circleL::before{position:relative;top:1px;content:'';display:inline-block;width:15px;height:15px;margin-right:4px;background:url(../images/ico_circle.png)top left;}
 .ico_download::after{content:'';display:inline-block;width:13px;height:12px;background:url(../images/ico_dowmload.png) no-repeat;margin-left:10px;}
 .ico_download.excel::after{background-position-y:50%;}
 .ico_download:hover::after,.ico_download:active::after{background-position-y:100%;}
@@ -81,11 +85,6 @@ label{font-size:12px;}
 select option:checked,
 select option:hover{background:#f3f3f3;color:#555;}select option:checked,
 select option:hover{box-shadow:0 0 10px 100px #f3f3f3 inset;color:#555;}
-.checks {position: relative;}
-.checks input[type="radio"] {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;}
-.checks input[type="radio"] + label {display:inline-block;position:relative;padding-left:25px;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;}
-.checks input[type="radio"] + label:before {content:'\f1ac';position:absolute;top:-5px;left:0;font-family:'axicon';font-size:25px;font-weight:lighter;color:#ddd;border:transparent;}
-.checks input[type="radio"]:checked + label:after {content:'\f1ac';position:absolute;top:-5px;left:0;font-family:'axicon';font-size:25px;font-weight:lighter; color:#1994dd;border:transparent;}
 .input_50 input{width:50px;}
 .input_60 input{width:60px;}
 .input_180 input{width:180px;}
@@ -195,6 +194,21 @@ select option:hover{box-shadow:0 0 10px 100px #f3f3f3 inset;color:#555;}
 .tit_h2 p{font-size:15px;line-height:20px;letter-spacing:-0.9px;}
 .search li{display:inline-block;}
 
+.damage_legend{position:absolute;right:10px;bottom:10px;background-color:rgba(255, 255, 255, 0.5);}
+.public_range{width:95px;height:74px;padding:4px 12px;border:1px solid #949494;}
+.i_public{font-weight:bold;}
+.i_public::before{position:relative;content:'';display:inline-block;background:url(../images/ico_damage.png)no-repeat;text-align:left;}
+.i_public1{position:relative;left:3px;}
+.i_public1::before{top:5px;left:-7px;width:21px;height:21px;background-position:center bottom;}
+.i_public2{line-height: 1.17;}
+.i_public2::before{top:12px;left:-5px;width:21px;height:21px;background-position:top;}
+.private_range{width:84px;height:76px;padding:8px 13px;border:1px solid #888;}
+.i_private{line-height:20px;font-weight:bold;}
+.i_private::before{display:inline-block;content:'';position:relative;width:10px;height:10px;border:1px solid #000;border-radius:50%;margin-right:10px;}
+.i_private1::before{background-color:#ef8116;}
+.i_private2::before{background-color:#fddd00;}
+.i_private3::before{background-color:#94bd47;}
+
 /* 대국민 지진정보 */
 /* 지진발생정보 */
 .search_instrumental{padding:20px 15px;border:1px solid #ddd;background-color:#edf8fe;text-align:left;}
@@ -218,13 +232,15 @@ select option:hover{box-shadow:0 0 10px 100px #f3f3f3 inset;color:#555;}
 .tooltip{display:none;position:absolute;right:17px;bottom:-7px;width:110px;line-height:23px;border:1px solid #bebdbd;background-color:rgba(255,255,255,.6);font-size:12px;box-shadow: 1.5px 2.6px 3px 0 rgba(0, 0, 0, 0.06);}
 
 /* 지진행동요령 */
-.search_knowhow{padding:30px 0;border-top:2px solid #22709e;border-bottom:1px solid #eeeeee;margin-bottom:25px;}
+.search_knowhow{padding:30px 0;border-top:2px solid #22709e;border-bottom:1px solid #eeeeee;margin-bottom:25px;align-items: center;}
 .search_knowhow button{vertical-align:middle;}
-.search_knowhow select{height:33px;font-size:14px;}
+.search_knowhow select{height:34px;font-size:14px;}
+.search_knowhow>li{margin-left:4px;}
+.search_knowhow>li:first-child{margin-left:0;}
 .search_knowhow>li:first-child select{width:150px;}
 .search_knowhow>li:nth-child(2) select{width:100px;}
-.search_knowhow input[type=text]{width:250px;height:33px;font-size:14px;padding-left:9px;}
-.search_knowhow input[type=checkbox]{position:relative;top:-2px;margin-left:13px;}
+.search_knowhow input[type=text]{width:250px;height:34px;font-size:14px;padding-left:9px;}
+.search_knowhow input[type=checkbox]{position:relative;top:-2px;margin-left:9px;}
 .result_knowhow_top input[type=checkbox]{position:relative;top:-5px;margin-right:3px;}
 .result_knowhow_top p{font-size:14px; color:#000;}
 .search_knowhow input::placeholder{color:#bcbcbc;}
@@ -234,7 +250,7 @@ select option:hover{box-shadow:0 0 10px 100px #f3f3f3 inset;color:#555;}
 .list_knowhow{margin:10px 0 9px;border-top:2px solid #22709e;text-align:left;}
 .list_knowhow li{padding:34px 0 33px;border-bottom:1px solid #dfdfdf;}
 .list_knowhow input,.list_knowhow span{vertical-align:top;}
-.list_knowhow i{vertical-align:inherit;}
+.list_knowhow i{position:relative;top:-2px;}
 .list_knowhow dl{padding-top:35px;text-align:left;}
 .list_knowhow dt,.list_knowhow dd{display:inline-block;font-size:14px;}
 .list_knowhow img{margin:0 22px;border:1px solid #b2b2b2;}
@@ -245,50 +261,55 @@ select option:hover{box-shadow:0 0 10px 100px #f3f3f3 inset;color:#555;}
 .list_knowhow dd:last-child{margin-right:0;}
 
 /* 국내재난안전포털 */
-.disaster_portal{border-top:2px solid #22709e;}
-.disaster_portal h3{width:245px;margin:50px 0;font-size:18px;}
+.disaster_portal{padding:31px 0;border-top:2px solid #22709e;border-bottom:1px solid #eee;}
+.disaster_portal h3{width:244px;border-right:1px solid #eee; font-size:18px;font-weight:bold;color:#176899;line-height:66px;}
+.disaster_portal ul{width:calc(100% - 244px);flex-wrap:wrap;align-content: space-between;padding-left:38px; }
+.disaster_portal li{text-align:left;}
+.disaster_portal label{position:relative;top:-2.5px;font-size:16px;margin-right:42px;}
+.disaster_portal .jeju{margin-right:35px;}
+.checks {position: relative;}
+.checks input[type="radio"] {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;}
+.checks input[type="radio"] + label {display:inline-block;position:relative;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;}
+.checks input[type="radio"] + label:before {position:relative;top:5px; content:'';display:inline-block;width:22px;height:22px;margin-right:8px;background:url(../images/ico_check.png)no-repeat center;background-size:cover; background-position-y:57.4%;}
+.checks input[type="radio"]:checked + label::before {background-position-y:29%;}
 
 /* 지진현장조사 */
 #tabs{position:relative;}
 #tabs .section_l{display:inline-block;width:581px;}
 #tabs .section_r{display:inline-block;width:calc(100% - 615px);margin-left:34px; vertical-align:top;}
 .ui-widget.ui-widget-content{border:none;}
-.tit_tabs{position:absolute;top:0;left:0;}
-.search_eq h3{font-size:18px;font-weight:bold;color:#176899;text-align:left;}
+.tit_tabs{position:absolute;z-index:2;top:0;left:0;height:38px;padding:10px !important;border:1px solid #555; border-radius:0;background-color:rgba(255, 255, 255, 0.7)}
+.search_eq h3{margin-bottom:15px;font-size:18px;font-weight:bold;color:#176899;}
 .tit_damage{height:55px;align-items: center;}
-.tit_damage h3{display:inline-block;font-size:16px;font-weight:bold;color:#000;text-align:left;}
-.tit_damage h3::before{position:relative;top:6px;content:'';display:inline-block;width:21px;height:25px;padding-right:5px;background:url(../images/ico_eq.png)no-repeat;}
+.tit_damage h3{display:inline-block;}
+.tit_area{font-size:16px;font-weight:bold;color:#000;text-align:left;}
+.tit_area::before{position:relative;top:6px;content:'';display:inline-block;width:21px;height:25px;padding-right:5px;background:url(../images/ico_eq.png)no-repeat;}
 .tit_damage button{position:relative;height:31px;padding:0 81px 0 25px;background-color:#1a94dd;font-size:13px;font-weight:bold;color:#fff;letter-spacing:-0.98px;}
+.tit_damage button:hover{background-color:#167ebc;}
 .tit_damage button::after{position:absolute;top:calc(50% - 6px);right:16px;content:'';display:inline-block;width:49px;height:6px; background:url(../images/bg_quick.png)no-repeat;}
-.map_damage{border:1px solid #555555;}
+.map_damage_wrap{position:relative;margin-bottom:5px;}
+.map_info{font-size:13px;letter-spacing:-0.65px;}
+.map_damage{position:relative;border:1px solid #555555;text-align:left;}
+.map_damage i{position:absolute;}
 .search_eq{border-top:2px solid #176899;border-bottom:1px solid #eee;padding:33px 0 48px;}
 .search_eq ul{overflow:hidden;width:100%;white-space: nowrap;}
 .search_eq li{display:inline-block;width:240px;height:90px;padding:20px 0;border:1px solid #dddddd;}
 .info_damage{text-align:left;}
-.info_damage h4::before{position:absolute;top:4px;left:-18px;content:'';display:inline-block;width:6px;height:6px;margin-right:4px;border:4px solid #1a94dd;border-radius:50%;}
 .info_damage ul>li:first-child h4{margin-top:0;}
-.info_damage h4{position:relative;font-size:16px;font-weight:bold;color:#1a94dd;margin:35px 0 12px;}
+.aca_02 .info_damage h4{position:relative;left:-18px;}
+.info_damage h4{font-size:16px;font-weight:bold;color:#1a94dd;margin:24px 0px 6px;}
 .info_damage dd, .info_damage dt{display:inline-block;font-size:14px;letter-spacing: -0.35px;line-height: 1.79;}
 .info_damage dt{font-weight:bold;}
 .info_damage dt::before{content:'-';display:inline-block;margin-right:4px;}
 .info_damage p{font-size:14px;color:#555;line-height:25px;}
-.datail_damage{width:582px;height:220px;border:1px solid #b2b2b2;}
-
-
-.tit_tabs{width:270px;height:38px;padding:10px !important;border:1px solid #555; border-radius:0;background-color:rgba(255, 255, 255, 0.7)}
-.tit_tabs li{width:;}
+.datail_damage{width:582px;height:220px;margin-bottom:5px;border:1px solid #b2b2b2;}
 .tit_tabs span{font-size:14px;font-weight:bold;color:#003793;letter-spacing:-1.05px;}
-.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{background-color:transparent;border:none;color:#000;}
-
-
-.ui-tabs .ui-tabs-nav .ui-tabs-anchor{padding:0;}
-
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover, .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{background-color:transparent;border:none;color:#000;}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor{padding:0;color:#000;}
 .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited{color:#000;}
-
-
-.tit_tabs a::before{content:'';display:inline-block; width:20px;height:20px;background-color: gold;}
-.ui-state-active a::before{background-color: royalblue;}
-
+.tit_tabs a{font-size:13px;}
+.tit_tabs a::before{vertical-align:text-top;content:'';display:inline-block;width:17px;height:17px;background:url(../images/ico_check.png) no-repeat bottom;margin:0 3px 0 10px;}
+.ui-state-active a::before{background-position-y:80%;}
 
 /* ico_fileName Extention */
 .ico_ext{display:inline-block;width:17px;height:17px;background:url(../images/ico_fileExt.png) -223px -82px no-repeat;margin:0 7px;vertical-align:middle;font-size:0;line-height:0;}
