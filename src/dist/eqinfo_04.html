@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="../css/ol/ol.css">
 </head>
 <body>
+
 <body>
   <div id="wrap">
     <div>
@@ -82,9 +83,9 @@
       <ul class="breadcrumb">
         <li><a href="./main.html" class="font_blue"></a></li>
         <li><a href="#">대국민지진정보</a></li>
-        <li><a href="#">지진행동요령</a></li>
+        <li><a href="#">국내재난안전포털</a></li>
       </ul>
-      <div class="flex_wrap f_c">
+      <div class="flex_wrap f_sb">
         <div class="snb_wrap section_l">
           <h2 class="tit_snb">대국민 지진정보</h2>
           <ul class="alignL" id="snb">
@@ -143,7 +144,7 @@
                   <label for="busan">부산</label>
                 </li>
                 <li class="checks">
-                  <input type="radio" name="area" id="jeju">
+                  <input type="radio" name="area" id="jeju" checked>
                   <label for="jeju" class="jeju">제주</label>
                 </li>
                 <li class="checks">
@@ -173,21 +174,37 @@
               </ul>
             </div>
             <div>
-              <h3 class="tit_area">제주정보</h3>
+              <h3 class="ico_area">제주정보</h3>
               <div class="flex_wrap f_sb">
-                <div>
-                  <img src="http://placehold.it/550x590">
-                  <div>
-                    <h4>지진정보</h4>
-                    <dl>
-                      <dt>진원시</dt>
-                      <dd>2008-05-31 21:59:30.0</dd>
-                      <dt>진원지</dt>
-                      <dd>제주 제주시 서쪽 78㎞ 해역</dd>
-                      <dt>규모</dt>
-                      <dd>4.2</dd>
-                    </dl>
+                <div class="map_damage_wrap">
+                  <div class="map_damage">
+                    <img src="http://placehold.it/550x590">
+                    <i class="i_public i_public1" style="left:250px;top:300px;"></i>
+                    <i class="i_public i_public2" style="left:275px;top:342px;"></i>
+                    <i class="i_public i_public2On" style="left:252px;top:203px;"></i>
+                    <i class="i_public i_public2" style="left:272px;top:386px;"></i>
+                    <i class="i_public i_public2" style="left:212px;top:320px;"></i>
+                    <i class="i_public i_public2" style="left:238px;top:345px;"></i>
+                    <div class="map_detail" style="top:85px;left:143px;">
+                      <h4>지진정보</h4>
+                      <dl>
+                        <dt>진원시</dt>
+                        <dd>2008-05-31 21:59:30.0</dd><br>
+                        <dt>진원지</dt>
+                        <dd>제주 제주시 서쪽 78㎞ 해역</dd><br>
+                        <dt>규모</dt>
+                        <dd>4.2</dd>
+                      </dl>
+                    </div>
+                    <ul class="damage_legend portal_range">
+                      <li class="i_public i_public1 alignL">인근주요지진</li>
+                      <li class="i_public i_public2 alignL">주요재난포털</li>
+                    </ul>
                   </div>
+                  <p class="map_info font_skyblue alignL">
+                    <i class="axi axi-ion-help-circled"></i>
+                    지진피해 공공시설 아이콘에 마우스 오버 시 피해현장 사진을 확인하실 수 있습니다.
+                  </p>
                 </div>
                 <div class="info_damage">
                   <ul>
@@ -195,17 +212,31 @@
                       <h4 class="font_skyblue ico_circleL">인근 주요지진</h4>
                       <dl>
                         <dt>진원시</dt>
-                        <dd>2008-05-31 21:59:30.0</dd>
+                        <dd>2008-05-31 21:59:30.0</dd><br>
                         <dt>진원지</dt>
-                        <dd>제주 제주시 서쪽 78㎞ 해역</dd>
+                        <dd>제주 제주시 서쪽 78㎞ 해역</dd><br>
                         <dt>규모</dt>
-                        <dd>4.2</dd>
+                        <dd>4.2</dd><br>
                         <dt>피해</dt>
                         <dd>이 지진정보는 자동분석 결과이며 상세분석 후 변경</dd>
                       </dl>
                     </li>
                     <li>
                       <h4 class="font_skyblue ico_circleL">제주특별시 주요포털</h4>
+                      <div class="link_wrap flex_wrap f_sb">
+                        <span>
+                          <span>http://www.jejusi.go.kr/field/safety.do</span>
+                          <a href="http://www.jejusi.go.kr/field/safety.do" target="_blank"
+                            class=" font_skyblue ico_shortcut">사이트바로가기</a>
+                        </span>
+                        <span class="paginate alignR">
+                          <a href="#" class="pre" title="이전" onclick="return false">〈</a>
+                          <a href="#" class="next on" title="다음" onclick="return false">〉</a>
+                        </span>
+                      </div>
+                      <div class="map_damage">
+                        <img src="http://placehold.it/583x361">
+                      </div>
                     </li>
                   </ul>
                 </div>
