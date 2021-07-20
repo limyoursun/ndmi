@@ -203,11 +203,11 @@ select option:hover{box-shadow:0 0 10px 100px #f3f3f3 inset;color:#555;}
 .i_public{position:relative;font-weight:bold;margin-left:23px;}
 .i_public::before{position:absolute;content:'';display:inline-block;background:url(../images/ico_damage.png)no-repeat;text-align:left;}
 .i_public1{left:3px;margin-left:20px;margin-bottom:6px;}
-.i_public1::before{top:-1px;;left:-25px;width:21px;height:21px;background-position:center 34%;}
+.i_public1::before{top:0;;left:-25px;width:21px;height:21px;background-position:center 34%;}
 .i_public2{line-height: 1.17;}
 .i_public2::before{top:4px;left:-24px;width:21px;height:21px;background-position:top;}
-.i_public3::before{top:4px;left:-24px;width:21px;height:21px;background-position:bottom;}
-.i_public3On::before{top:4px;left:-24px;width:21px;height:21px;background-position:80%;}
+.i_public3::before{top:0;left:-24px;width:21px;height:21px;background-position:bottom;}
+.i_public3On::before{top:4px;left:-24px;width:21px;height:21px;background-position-y:66%;}
 .private_range{width:84px;height:76px;padding:8px 13px;border:1px solid #888;}
 .i_private{line-height:20px;font-weight:bold;}
 .i_private::before{display:inline-block;content:'';position:relative;width:10px;height:10px;border:1px solid #000;border-radius:50%;margin-right:10px;}
