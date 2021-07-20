@@ -291,12 +291,14 @@ select option:hover{box-shadow:0 0 10px 100px #f3f3f3 inset;color:#555;}
 .map_detail dt{width:42px;font-weight:bold;color:#1a4cdd;}
 .map_detail dt::before{content:'·';display:inline-block;padding-right:5px;}
 .link_wrap{margin:10px 0;}
-.link_wrap span{font-size:14px;}
+.link_wrap>span:first-child{position:relative;top:5px;font-size:14px;letter-spacing: 0.14px;}
 .link_wrap a{font-size:13px;margin-left:7px;}
-.link_wrap .paginate{margin-top:0;}
+.link_wrap .paginate{position:relative;right:3px;margin-top:0;}
 .link_wrap .paginate .pre,
 .link_wrap .paginate .next{width:25px;height:25px;color:#777;background-color:#fff;border:1px solid #dddddd;margin:0 1px;margin-right:-3px;padding-top:3px;font-size:12px;line-height:19px;font-weight:bold;}
 .link_wrap .paginate a:hover, .link_wrap .paginate .on{border:1px solid #1a94dd;color:#1a94dd;}
+.eqinfo_04 .info_damage h4{margin:36px 0px 6px;}
+.eqinfo_04 .portal_info{border:1px solid #b2b2b2;}
 
 /* 지진현장조사 */
 #tabs{position:relative;}
