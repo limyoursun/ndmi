@@ -270,8 +270,8 @@ select option:hover{box-shadow:0 0 10px 100px #f3f3f3 inset;color:#555;}
 .eqinfo_04 .info_damage{display:inline-block;width:calc(100% - 552px);margin:0 35px 0 35px;}
 .disaster_portal{padding:31px 0;border-top:2px solid #22709e;border-bottom:1px solid #eee;}
 .eqinfo_04 .ico_area{margin:20px 0 17px;}
-.disaster_portal h3{width:244px;border-right:1px solid #eee; font-size:18px;font-weight:bold;color:#176899;line-height:66px;}
-.disaster_portal ul{width:calc(100% - 244px);flex-wrap:wrap;align-content: space-between;padding-left:38px; }
+.disaster_portal h3{width:246px;padding:0 36px 0 21px;border-right:1px solid #eee; font-size:18px;font-weight:bold;color:#176899;line-height:66px;letter-spacing: -1.35px;}
+.disaster_portal ul{width:calc(100% - 246px);flex-wrap:wrap;align-content: space-between;padding-left:38px; }
 .disaster_portal li{text-align:left;}
 .disaster_portal label{position:relative;top:-2.5px;font-size:16px;margin-right:42px;}
 .disaster_portal .jeju{margin-right:35px;}
@@ -310,7 +310,7 @@ select option:hover{box-shadow:0 0 10px 100px #f3f3f3 inset;color:#555;}
 #tabs .section_r{display:inline-block;width:calc(100% - 615px);margin-left:34px; vertical-align:top;}
 .ui-widget.ui-widget-content{border:none;}
 .tit_tabs{position:absolute;z-index:2;top:0;left:0;height:38px;padding:10px !important;border:1px solid #555; border-radius:0;background-color:rgba(255, 255, 255, 0.7)}
-.search_eq h3{display:inline-block;margin-bottom:15px;font-size:18px;font-weight:bold;color:#176899;}
+.search_eq h3{display:inline-block;margin-bottom:19px;font-size:18px;font-weight:bold;color:#176899;}
 .slide_wrapper{position:relative;width:1210px;height:90px;margin:0 auto;overflow:hidden;}
 .slides{position:absolute;left:0;top:0;width:2610px;transition:0.7s ease-out;}
 .slides li{display:inline-block;float:left;margin-right:1px;}
@@ -327,7 +327,7 @@ select option:hover{box-shadow:0 0 10px 100px #f3f3f3 inset;color:#555;}
 .eq_select_info p>span:first-child::after{content:'/';display:inline-block;margin:0 5px;}
 .tit_damage{height:55px;align-items: center;}
 .tit_damage h3{display:inline-block;}
-.tit_damage button{position:relative;height:31px;padding:0 81px 0 25px;font-size:13px;font-weight:bold;letter-spacing:-0.98px;}
+.tit_damage button{position:relative;height:31px;padding:0 80px 0 25px;font-size:13px;font-weight:bold;letter-spacing:-0.98px;}
 .tit_damage button::after{position:absolute;top:calc(50% - 6px);right:16px;content:'';display:inline-block;width:49px;height:6px; background:url(../images/bg_quick.png)no-repeat;}
 .map_damage_wrap{position:relative;}
 .map_info{margin-top:7px; font-size:13px;letter-spacing:-0.65px;}
