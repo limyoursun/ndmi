@@ -102,68 +102,126 @@
           </div>
           <div>
             <div class="search_eq">
-              <h3 class="alignL">대표지진</h3>
-              <ul>
-                <li>
-                  <label for="">
-                    <input type="checkbox">
-                    <p>경주지진</p>
-                    <span>5.8</span> / <span>2016-09-12</span>
-                  </label>
-                </li>
-                <li>
-                  <label for="">
-                    <input type="checkbox">
-                    <p>경주지진</p>
-                    <span>5.8</span> / <span>2016-09-12</span>
-                  </label>
-                </li>
-                <li>
-                  <label for="">
-                    <input type="checkbox">
-                    <p>경주지진</p>
-                    <span>5.8</span> / <span>2016-09-12</span>
-                  </label>
-                </li>
-                <li>
-                  <label for="">
-                    <input type="checkbox">
-                    <p>경주지진</p>
-                    <span>5.8</span> / <span>2016-09-12</span>
-                  </label>
-                </li>
-                <li>
-                  <label for="">
-                    <input type="checkbox">
-                    <p>경주지진</p>
-                    <span>5.8</span> / <span>2016-09-12</span>
-                  </label>
-                </li>
-                <li>
-                  <label for="">
-                    <input type="checkbox">
-                    <p>경주지진</p>
-                    <span>5.8</span> / <span>2016-09-12</span>
-                  </label>
-                </li>
-              </ul>
-
+              <div class="flex_wrap f_sb">
+                <h3 class="alignL">대표지진</h3>
+                <span class="controls">
+                  <span class="paginate alignR">
+                    <a href="#" class="prev" title="이전" onclick="return false">〈</a>
+                    <a href="#" class="next on" title="다음" onclick="return false">〉</a>
+                  </span>
+                </span>
+              </div>
+              <div class="slide_wrapper">
+                <ul class="slides">
+                  <li>
+                    <label class="on" for="eq_select_1">
+                      <input type="radio" id="eq_select_1" name="eq_select">
+                      <span class="location_label">국내</span>
+                      <div class="eq_select_info">
+                        <span>경주지진</span>
+                        <p><span>5.8</span><span>2016-09-12</span></p>
+                      </div>
+                    </label>
+                  </li>
+                  <li>
+                    <label for="eq_select_2">
+                      <input type="radio" id="eq_select_2" name="eq_select">
+                      <span class="location_label">국내</span>
+                      <div class="eq_select_info">
+                        <span>경주지진</span>
+                        <p><span>5.8</span><span>2016-09-12</span></p>
+                      </div>
+                    </label>
+                  </li>
+                  <li>
+                    <label for="eq_select_3">
+                      <input type="radio" id="eq_select_3" name="eq_select">
+                      <span class="location_label">국내</span>
+                      <div class="eq_select_info">
+                        <span>경주지진</span>
+                        <p><span>5.8</span><span>2016-09-12</span></p>
+                      </div>
+                    </label>
+                  </li>
+                  <li>
+                    <label for="eq_select_4">
+                      <input type="radio" id="eq_select_4" name="eq_select">
+                      <span class="location_label">국내</span>
+                      <div class="eq_select_info">
+                        <span>경주지진</span>
+                        <p><span>5.8</span><span>2016-09-12</span></p>
+                      </div>
+                    </label>
+                  </li>
+                  <li>
+                    <label for="eq_select_5">
+                      <input type="radio" id="eq_select_5" name="eq_select">
+                      <span class="location_label">국내</span>
+                      <div class="eq_select_info">
+                        <span>경주지진</span>
+                        <p><span>5.8</span><span>2016-09-12</span></p>
+                      </div>
+                    </label>
+                  </li>
+                  <li>
+                    <label for="eq_select_6">
+                      <input type="radio" id="eq_select_6" name="eq_select">
+                      <span class="location_label">국내</span>
+                      <div class="eq_select_info">
+                        <span>경주지진</span>
+                        <p><span>5.8</span><span>2016-09-12</span></p>
+                      </div>
+                    </label>
+                  </li>
+                  <li>
+                    <label for="eq_select_7">
+                      <input type="radio" id="eq_select_7" name="eq_select">
+                      <span class="location_label">국내</span>
+                      <div class="eq_select_info">
+                        <span>경주지진</span>
+                        <p><span>5.8</span><span>2016-09-12</span></p>
+                      </div>
+                    </label>
+                  </li>
+                  
+                </ul>
+              </div>
               <script>
-              $(function(){
-                
+                var slides = document.querySelector('.slides'),
+                  slide = document.querySelectorAll('.slides li')
+                  currentIdx = 0,
+                  slideCount = slide.length,
+                  prevBtn = document.querySelector('.prev'),
+                  slideWidth = 300,
+                  slideMargin = 30,
+                  nextBtn = document.querySelector('.next');
 
+                slides.style.width = (slideWidth + slideMargin) * slideCount - slideMargin + 'px';
 
-
-              })
+                function moveSlide(num) {
+                  slides.style.left = -num * 1210 + 'px';
+                  currentIdx = num;
+                }
+                nextBtn.addEventListener('click', function () {
+                  if (currentIdx < (slide.length / 5) - 1) {
+                    moveSlide(currentIdx + 1);
+                  } else {
+                    moveSlide(0);
+                  }
+                });
+                prevBtn.addEventListener('click', function () {
+                  if (currentIdx > 0) {
+                    moveSlide(currentIdx - 1);
+                  } else {
+                    moveSlide(0);
+                  }
+                });
               </script>
-
-
-
             </div>
             <div>
               <div class="tit_damage flex_wrap f_sb">
                 <h3 class="ico_area">경주지진 피해내역</h3>
-                <button>지진피해 현장조사 바로가기</button>
+                <button class="btn_skyblue">지진피해 현장조사 바로가기</button>
               </div>
               <div>
                 <div id="tabs">
@@ -213,13 +271,7 @@
                         </li>
                         <li>
                           <h4 class="ico_circleL">지진발생 상세정보</h4>
-                          <p>추석명절을 앞둔 2016년 9월 12일 19시 44분경 경주시 남남서쪽 8.2km 지역 (35.77°N, 129.19°E)에서 규모 5.1의 전진이 발생한
-                            이후,20시
-                            32분경 경주시 남남 서쪽 8.7km 지역(35.76°N, 129.19°E)에서 규모 5.8의 본진이 발생하다. 이후 소 규모 여진이 지속되다 일주일 후인 9월
-                            19일
-                            20시 33분에 규모 4.5의 여진이 발생 하다. 9.12지진은 국내 계기지진 관측 이래 역대 최대 규모의 지진으로서 전국 대부분의 지역에서 진동을 느낄 수
-                            있었으며,
-                            경주ㆍ대구에서 대진도Ⅵ, 부산ㆍ울산ㆍ창원에서 진도Ⅴ가 감지되었다.
+                          <p>추석명절을 앞둔 2016년 9월 12일 19시 44분경 경주시 남남서쪽 8.2km 지역 (35.77°N, 129.19°E)에서 규모 5.1의 전진이 발생한 이후,20시 32분경 경주시 남남 서쪽 8.7km 지역(35.76°N, 129.19°E)에서 규모 5.8의 본진이 발생했다. 이후 소규모 여진이 지속되다 일주일 후인 9월 19일 20시 33분에 규모 4.5의 여진이 발생했다. 9.12지진은 국내 계기지진 관측 이래 역대 최대 규모의 지진으로서 전국 대부분의 지역에서 진동을 느낄 수 있었으며, 경주ㆍ대구에서 대진도Ⅵ, 부산ㆍ울산ㆍ창원에서 진도Ⅴ가 감지되었다.
                           </p>
                         </li>
                         <li>
@@ -315,7 +367,8 @@
         </li>
         <li class="ft_sns">
           <a href="https://www.facebook.com/NDMIKorea/"><img src="../images/ico_facebook.png" alt="페이스북 아이콘 이미지"></a>
-          <a href="https://www.youtube.com/channel/UCZqKqkyEkGcFYotEBzEIjiQ"><img src="../images/ico_youtube.png" alt="유튜브 아이콘 이미지"></a>
+          <a href="https://www.youtube.com/channel/UCZqKqkyEkGcFYotEBzEIjiQ"><img src="../images/ico_youtube.png"
+              alt="유튜브 아이콘 이미지"></a>
         </li>
       </ul>
     </div>

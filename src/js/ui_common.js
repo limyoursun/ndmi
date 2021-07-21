@@ -70,4 +70,26 @@ function snb(){
     })
 }
 snb();
+
+// check icon
+$('.slides label').on({
+  click:function(){
+    $('.slides label').removeClass('on');
+    $(this).addClass("on");
+  }
+})
+
+// slide button
+$('.controls .prev').on({
+  click:function(){
+    $(this).addClass("on");
+    $('.next').removeClass("on");
+  }
+})
+$('.controls .next').on({
+  click:function(){
+    $(this).addClass("on");
+    $('.prev').removeClass("on");
+  }
+})
 })
