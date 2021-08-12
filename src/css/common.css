@@ -26,6 +26,7 @@ select::-ms-expand {display: none;}
 .clearfix{*zoom:1;}
 .clearfix::before,
 .clearfix::after{display:block;content:"";line-height:0;clear:both;}
+.blind{position:absolute;left:-9999px;}
 
 .fl{float:left;}
 .fr{float:right;}
@@ -34,6 +35,9 @@ select::-ms-expand {display: none;}
 .alignC{text-align:center;}
 
 .font_b{font-weight:bold;}
+.font_black{color:#555 !important;;}
+.font_red{color:#f86c6c !important;}
+.font_deepred{color:#e95a5a !important;}
 .font_skyblue{color:#1994dd !important;}
 .font_blue{color:#156897 !important;}
 
@@ -70,6 +74,7 @@ select::-ms-expand {display: none;}
 .ico_download::after{content:'';display:inline-block;width:13px;height:12px;background:url(../images/ico_dowmload.png) no-repeat;margin-left:10px;}
 .ico_download.excel::after{background-position-y:50%;}
 .ico_download:hover::after,.ico_download:active::after{background-position-y:100%;}
+.ico_introdown{position:relative;top:4px;display:inline-block;width:17px;height:18px;background:url(../images/ico_introdown.png);}
 .ico_shortcut:after{content:'';display:inline-block;width:10px;height:10px;background:url(../images/ico_shorthand.png);margin-left:5px;}
 .i_public{position:relative;font-weight:bold;margin-left:23px;}
 .i_public::before{position:absolute;content:'';display:inline-block;width:21px;height:21px;background:url(../images/ico_damage.png)no-repeat;text-align:left;}
@@ -152,11 +157,11 @@ select option:hover{box-shadow:0 0 10px 100px #f3f3f3 inset;color:#555;}
 /* snb */
 .snb_wrap{width:180px;margin-right:33px;}
 #snb{width:180px;}
-#snb>li>a{display:block;padding:16px 0 16px 20px;color:#555;border:1px solid #dfdfdf;border-bottom:1px solid transparent;font-size:16px;font-weight:bold;background:url(../images/ico_snb_plus.png) 87% center no-repeat;}
+#snb>li>a{display:block;padding:16px 0 16px 20px;color:#555;border:1px solid #dfdfdf;border-bottom:1px solid transparent;font-size:15px;font-weight:bold;background:url(../images/ico_snb_plus.png) 155px center no-repeat;}
 #snb>li:last-child a{border-bottom:1px solid #dfdfdf;}
-#snb>li>a:hover{color:#fff;background:#1a94dd url(../images/ico_snb_plus_wh.png) 87% center no-repeat;border:1px solid #1a94dd;}
+#snb>li>a:hover{color:#fff;background:#1a94dd url(../images/ico_snb_plus_wh.png) 155px center no-repeat;border:1px solid #1a94dd;}
 #snb>li>a.on:hover,
-#snb>li>a.on{color:#fff;background:#1a94dd url(../images/ico_snb_min.png) 87% center no-repeat;border:1px solid #1a94dd;}
+#snb>li>a.on{color:#fff;background:#1a94dd url(../images/ico_snb_min.png) 155px center no-repeat;border:1px solid #1a94dd;}
 #snb>li>a.empty{background:none;}
 #snb>li>a.empty:hover{background:#1a94dd;color:#fff;border:1px solid #1a94dd;}
 #snb>li>a.on.empty{background:#1a94dd;color:#fff;border:1px solid #1a94dd;}
