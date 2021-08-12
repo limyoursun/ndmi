@@ -34,7 +34,6 @@ function snb(){
     lm.dep2 = lm.find(">li>ul");
     lm.dep2.a = lm.dep2.find(">li>a");
     lm.dep2.hide();
-
     lm.a.each(function () {
         if(!$(this).next().length){
             $(this).addClass("empty");
@@ -54,18 +53,30 @@ function snb(){
             lm.dep2.slideUp("fast");
             lm.dep2.a.removeClass("on");
             $(this).addClass("on");
+            $(this).next("ul").slideDown("fast");
         }else{
             $(this).removeClass("on");
             $(this).next("ul").slideUp("fast");
+        }
+        if($(this).attr("href").length < 5){
             return false;
         }
+        
+    });
+    lm.dep2.a.on("click",function () {
+        lm.dep2.a.removeClass("on");
     });
     $("#snb>li>a").on({
       click:function(){
-        $("#snb>li>a").removeClass('on');
-        $(this).addClass('on');
-        $("#snb>li>a").next("ul").slideUp("fast");
-        $(this).next("ul").slideDown("fast");
+        if($(this).next("ul").is("ul")){
+          $("#snb>li>a").removeClass('on');
+          $(this).addClass('on');
+          $(!this).next("ul").slideUp("fast");
+          $(this).next("ul").slideDown("fast");
+        }else{
+          $(this).addClass('on');
+          $("#snb>li>a").next("ul").slideUp("fast");
+        }
       }
     })
 }
