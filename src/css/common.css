@@ -138,14 +138,14 @@ select option:hover{box-shadow:0 0 10px 100px #f3f3f3 inset;color:#555;}
 
 /* Gnb */
 .gnb_wrap{position:relative;border-top:1px solid #cdcdcd;border-bottom:1px solid #cdcdcd;z-index:9999;}
-.gnb_wrap::after{display:none;position:absolute;top:54px;content:'';width:100%;height:255px;background-color: #fff;border-top:1px solid #cdcdcd;border-bottom:1px solid #cdcdcd;z-index:-1;transition:0.3s;}
+.gnb_wrap::after{display:none;position:absolute;top:54px;content:'';width:100%;height:280px;background-color: #fff;border-top:1px solid #cdcdcd;border-bottom:1px solid #cdcdcd;z-index:-1;transition:0.3s;}
 .gnb_wrap.on::after{display:block;}
 .gnb>li{display:inline-block;width:170px;margin:0 50px;}
 .depth1{position:relative;width:100%;font-size:20px;font-weight:600;line-height:55px;transition:0.3s;}
 .depth1:hover,.depth1:active,.depth1.on{color:#176899;}
 .depth1.active{color:#176899;}
 .depth1:hover::before,.depth1:active::before,.depth1.on::before,.depth1.active::before{position:absolute;bottom:-1px;left:calc(50% - 85px);content:'';display:inline-block;width:100%;height:4px;background-color:#176899;z-index:9999;}
-.depth2{position:absolute;width:170px;height:255px;display:none;transition:0.3s;}
+.depth2{position:absolute;width:170px;height:280px;display:none;transition:0.3s;}
 .depth2:hover,.depth2:active,.depth2.on{background-color:#f1f8fe;}
 .depth2.active{background-color:#f1f8fe;}
 .depth2 a{display:block;font-size:16px;color:#555;padding:12.5px 0;}
@@ -157,10 +157,7 @@ select option:hover{box-shadow:0 0 10px 100px #f3f3f3 inset;color:#555;}
 /* snb */
 .snb_wrap{width:180px;margin-right:33px;}
 #snb{width:180px;}
-
 .snb_wrap #snb>li>a.empty{background:none;}
-
-
 #snb>li>a{display:block;padding:16px 0 16px 20px;color:#555;border:1px solid #dfdfdf;border-bottom:1px solid transparent;font-size:15px;font-weight:bold;background:url(../images/ico_snb_plus.png) 155px center no-repeat;}
 #snb>li:last-child a{border-bottom:1px solid #dfdfdf;}
 #snb>li>a:hover{color:#fff;background:#1a94dd url(../images/ico_snb_plus_wh.png) 155px center no-repeat;border:1px solid #1a94dd;}
@@ -170,9 +167,9 @@ select option:hover{box-shadow:0 0 10px 100px #f3f3f3 inset;color:#555;}
 #snb>li>a.empty:hover{background:#1a94dd;color:#fff;border:1px solid #1a94dd;}
 #snb>li>a.on.empty{background:#1a94dd;color:#fff;border:1px solid #1a94dd;}
 #snb>li>ul{background-color:#fff;border:1px solid #1a94dd;}
-#snb>li>ul>li>a{display:block;padding-left:25px;color:#555;font-size:14px;line-height:40px;}
+#snb>li>ul>li>a{display:block;padding-left:30px;color:#555;font-size:14px;line-height:40px;}
 #snb>li>ul>li>a:hover,#snb>li>ul>li>a:active,#snb>li>ul>li>a.on,#snb>li>ul>li>a.active{color:#1a94dd;}
-#snb>li>ul>li>a::before{position:relative;top:-3px;display:inline-block;content:'';width:5px;height:5px;border-radius:5px;background-color:#aeaeae;margin-right:10px;}
+#snb>li>ul>li>a::before{position:relative;top:-3px;left:-10px; display:inline-block;content:'';width:5px;height:5px;border-radius:5px;background-color:#aeaeae;}
 #snb>li>ul>li>a:hover::before,#snb>li>ul>li>a:active::before,#snb>li>ul>li>a.active::before{background-color:#1a94dd;}
 
 /* lnb */
@@ -428,3 +425,16 @@ select option:hover{box-shadow:0 0 10px 100px #f3f3f3 inset;color:#555;}
 .ext_wmv {background-position:-23px -102px;}
 .ext_wvz {background-position:-43px -102px;}
 .ext_bzs {background-position:-63px -102px;}
+
+/* error */
+.error{position:absolute;top:50%;left:50%;transform:translateX(-50%) translateY(-50%);}
+.error_wrap{width:500px;background-color:#f1f8fe;border:5px solid #176899;border-width:3px 0;padding:85px;}
+.error_cont{text-align:left;background:url(../images/bg_error.png) 0 0 no-repeat;padding-left:254px;color:#000;}
+.error_cont h1{font-family:'notokr';font-weight:bold;font-size:30px;margin-bottom:23px;color:333;}
+.error_cont b{color:#176899;}
+.error_cont p{font-size:16px;line-height:26px;margin-bottom:30px;}
+.error_cont .btn_com{padding:10px 15px;font-size:15px;}
+
+/* 20210924 2줄인 3depth의 추가로 인한 수정 */
+.one_line{letter-spacing:-2px;} /* 자간을 줄여 1줄로 만들 수 있는 경우 */
+.two_line{padding:5px 0;line-height:20px !important;} /* 자간을 줄여도 2줄이 되는 경우 */

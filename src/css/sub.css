@@ -43,6 +43,7 @@
 .popular,
 .newest{position:relative;flex:0 1 auto;display:flex;
 width:709px;text-align:left;padding:22px 70px;box-sizing:border-box;}
+
 /* intro */
 .intro01 p{margin-top:60px;text-align:justify;font-size:18px;line-height:1.5;word-break:keep-all;letter-spacing:-.02em;}
 .intro02{text-align:left;}
@@ -122,3 +123,39 @@ font-weight:bold;margin-right:5px;}
 .reliefcenter img{margin:5px 0 10px;}
 .dash_list span{display:inline;}
 .sort_bar:after{content:'/';display:inline;margin:0 10px;font-weight:normal;}
+
+/* 지진 상식 */
+.knowledge .tit h3{line-height:25px;}
+.knowledge .tit .ico_circleL::before{top:6px;}
+.knowledge .copyS{font-size:12px;color:#777;}
+.knowledge .copyM{margin:5px 0 0;font-size:13px;color:#777;}
+.knowledge .copyL{font-size:14px;font-weight:normal;color:#1a94dd;}
+.intro02 .dot::before{position:absolute;top:0;left:0; display:inline-block;content:'·';font-size:20px;font-weight:bold;color:#1994dd;}
+.intro02 .dot{position:relative;padding-left:10px;}
+.knowledge .dot_list dd{letter-spacing:-0.35px;}
+.knowledge p{margin-bottom:15px;}
+.knowledge .img_wrap{margin-top:35px;text-align:center;}
+.knowledge .img_wrap:last-child{margin-top:5px;}
+.tbl_knowledge{margin-top:35px;}
+.tbl_knowledge th{font-size:14px;font-weight:bold;color:#262626;background-color:#eaf4fa;line-height:30px;border-top:1px solid #ccc;}
+.tbl_knowledge td{padding:2px 0; border:1px solid #ccc;border-width:1px 0 1px;font-size:14px;line-height:30px;}
+.tbl_knowledge td:nth-child(2){text-align-last:left;}
+.knowledge.knowledge03 dd{letter-spacing:-0.45px;}
+.knowledge.knowledge03 .img_wrap{margin:20px 0 80px;}
+.tbl_knowledge_04{text-align:center;}
+.tbl_fault, .tbl_fault2{width:850px;margin:0 auto;}
+.tbl_fault2{margin-top:20px;}
+.tbl_fault tr, .tbl_fault2 tr{border:1px solid #dfdfdf;border-width:1px 0 1px;}
+.tbl_fault th, .tbl_fault2 th{background-color:#eaf4fa;font-weight:bold;color:#262626;font-size:13px;}
+.tbl_fault td, .tbl_fault2 td{padding:10px;font-size:13px;border:1px solid #dfdfdf;}
+.tbl_fault td:last-child, .tbl_fault2 td:last-child{border-right-width:0;}
+.tbl_fault td{text-align:left;line-height:20px;}
+.ico_bar{width:150px;height:8px;background-color:#ea490a;}
+.tbl_fault2 tr:nth-child(2) .ico_bar{background-color:#eae70a;}
+.tbl_fault2 tr:nth-child(3) .ico_bar{background-color:#24ea0a;}
+.tbl_fault2 tr:nth-child(4) .ico_bar{background-color:#0a6eea;}
+.knowledge.knowledge04 .img_wrap{margin:15px 0 80px;}
+.knowledge.intro02 .dot_list:nth-child(1) dt:nth-of-type(2){margin-top:5px;}
+
+.researchresults .asterisk::before{position:absolute;display:inline-block;content:'*';top:0;left:10px;}
+.researchresults .asterisk{position:relative;padding-left:20px;}
