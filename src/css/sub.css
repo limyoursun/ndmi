@@ -127,15 +127,26 @@ font-weight:bold;margin-right:5px;}
 /* 지진 상식 */
 .knowledge .tit h3{line-height:25px;}
 .knowledge .tit .ico_circleL::before{top:6px;}
-.knowledge .copyS{font-size:12px;color:#777;}
-.knowledge .copyM{margin:5px 0 0;font-size:13px;color:#777;}
-.knowledge .copyL{font-size:14px;font-weight:normal;color:#1a94dd;}
-.intro02 .dot::before{position:absolute;top:0;left:0; display:inline-block;content:'·';font-size:20px;font-weight:bold;color:#1994dd;}
-.intro02 .dot{position:relative;padding-left:10px;}
-.knowledge .dot_list dd{letter-spacing:-0.35px;}
-.knowledge p{margin-bottom:15px;}
-.knowledge .img_wrap{margin-top:35px;text-align:center;}
-.knowledge .img_wrap:last-child{margin-top:5px;}
+.knowledge .copyS,
+.dwelling .copyS{font-size:12px;color:#777;}
+.knowledge .copyM,
+.dwelling .copyM{margin:5px 0 0;font-size:13px;color:#777;}
+.knowledge .copyL,
+.dwelling .copyL{font-size:14px;font-weight:normal;color:#1a94dd;}
+.intro02 .dot::before,
+.knowledge .dot::before,
+.dwelling .dot::before
+{position:absolute;top:0;left:0; display:inline-block;content:'·';font-size:20px;font-weight:bold;color:#1994dd;}
+.intro02 .dot,
+.knowledge .dot,
+.dwelling .dot{position:relative;padding-left:10px;}
+.knowledge .dot_list dd,
+.dwelling .dot_list dd{letter-spacing:-0.35px;}
+.knowledge p,.dwelling p{margin-bottom:15px;}
+.knowledge .img_wrap,
+.dwelling .img_wrap{margin-top:35px;text-align:center;}
+.knowledge .img_wrap:last-child,
+.dwelling .img_wrap:last-child{margin-top:5px;}
 .tbl_knowledge{margin-top:35px;}
 .tbl_knowledge th{font-size:14px;font-weight:bold;color:#262626;background-color:#eaf4fa;line-height:30px;border-top:1px solid #ccc;}
 .tbl_knowledge td{padding:2px 0; border:1px solid #ccc;border-width:1px 0 1px;font-size:14px;line-height:30px;}
@@ -156,6 +167,28 @@ font-weight:bold;margin-right:5px;}
 .tbl_fault2 tr:nth-child(4) .ico_bar{background-color:#0a6eea;}
 .knowledge.knowledge04 .img_wrap{margin:15px 0 80px;}
 .knowledge.intro02 .dot_list:nth-child(1) dt:nth-of-type(2){margin-top:5px;}
-
 .researchresults .asterisk::before{position:absolute;display:inline-block;content:'*';top:0;left:10px;}
 .researchresults .asterisk{position:relative;padding-left:20px;}
+
+.f_sa{justify-content:space-around;}
+.ico_info{position:relative;}
+.ico_info::before{position:absolute;left:-15px;display:inline-block;content:'※';}
+.ico_opennew::after{display:inline-block;content:'\e8ad';font-family:'axicon';margin-left:3px;transform:rotate(180deg);}
+.img_list div div{padding:12px 0 15px;border:1px solid #dfdfdf;background-color:#f3f0f0;text-align:center;}
+.img_list h4{font-size:14px;font-weight:bold;color:#000;}
+.img_list p{margin-bottom:0;font-size:13px;line-height:18px;}
+
+.dwelling02 .tit{margin-top:60px;}
+.dwelling02 > .section{margin-top:20px;}
+.dwelling02 .img_wrap{padding:25px 0;background-color:#efefef;}
+.dwelling02 .dot_list dd{padding-left:0;margin-bottom:10px;}
+.dwelling03 h4::before{position:absolute;top:0;left:0;display:inline-block;content:'';width:11px;height:31px;background-color:#137dbd;}
+.dwelling03 h4::after{position:absolute;top:15px;left:270px;display:inline-block;content:'';width:833px;height:1px;background-color:#41aef0;}
+.dwelling03 h4{position:relative;display:block;width:233px;margin-top:30px;padding-left:18px;border-radius:0 15px 15px 0;background-color:#41aef0;line-height:31px;font-size:16px;font-weight:bold;color:#fff;}
+.dwelling03 .section:first-child h4::after{display:none;}
+.dwelling04 .dot_list dt{margin-top:20px;}
+.dwelling04 .list_ex{margin-left:30px;}
+.dwelling04 .list_ex span{color:#a2a2a2;}
+.dwelling04 .list_ex a{font-size:13px;}
+.dwelling04 .dot_list p{margin-bottom:0;}
+.dwelling04 .list_bar span{display:inline-block;width:110px;}
