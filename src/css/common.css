@@ -167,9 +167,9 @@ select option:hover{box-shadow:0 0 10px 100px #f3f3f3 inset;color:#555;}
 #snb>li>a.empty:hover{background:#1a94dd;color:#fff;border:1px solid #1a94dd;}
 #snb>li>a.on.empty{background:#1a94dd;color:#fff;border:1px solid #1a94dd;}
 #snb>li>ul{background-color:#fff;border:1px solid #1a94dd;}
-#snb>li>ul>li>a{display:block;padding-left:30px;color:#555;font-size:14px;line-height:40px;}
+#snb>li>ul>li>a{position:relative;display:block;padding:11px 10px 11px 30px;color:#555;font-size:14px;word-break:keep-all;}
 #snb>li>ul>li>a:hover,#snb>li>ul>li>a:active,#snb>li>ul>li>a.on,#snb>li>ul>li>a.active{color:#1a94dd;}
-#snb>li>ul>li>a::before{position:relative;top:-3px;left:-10px; display:inline-block;content:'';width:5px;height:5px;border-radius:5px;background-color:#aeaeae;}
+#snb>li>ul>li>a::before{position:absolute;top:18px;left:18px;display:inline-block;content:'';width:5px;height:5px;border-radius:5px;background-color:#aeaeae;}
 #snb>li>ul>li>a:hover::before,#snb>li>ul>li>a:active::before,#snb>li>ul>li>a.active::before{background-color:#1a94dd;}
 
 /* lnb */
