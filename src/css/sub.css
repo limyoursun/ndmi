@@ -75,54 +75,6 @@ font-weight:600;line-height:1.2;}
 .box_figure{background-color:#efefef;padding:30px 36px 20px;margin:5px 0 30px;}
 .box_figure .figure{text-align:center;margin-right:20px;}
 .box_figure .mg_fix{margin-top:20px;}
-.intro03{text-align:left;}
-.intro03 .tit_h2 p{font-size:18px;color:#000;}
-.guidebook{position:relative;}
-.intro03 .tit_h2 a{position:absolute;top:0;right:0;font-size:15px;line-height:37px;padding:0 7px 0 38px;}
-.intro03 .tit_h2 a::before{position:relative;top:3px;left:-13px;content:'';display:inline-block;width:11px;height:16px;background:url(../images/guide_download.png)no-repeat top center;}
-.intro03 .tit_h2 a:hover::before{background-position:bottom center;}
-.intro03 .article{background-color:#efefef;margin-top:60px;}
-.intro03 .article:first-of-type{margin-top:-6px;}
-.intro03 .article > .tit{display:flex;height:60px;align-items:center;background-color:
-#b9baba;}
-.intro03 .article .tit p{color:#000;font-weight:600;font-size:14px;}
-.intro03 .article .tit h3 span::before{position:relative;content:':';font-size:16px;margin:0 8px;}
-.intro03 .article .tit h3 span{font-size:14px;}
-.intro03 .article .tit span{margin-left:5px;font-size:12px;color:#fff;line-height:33px;}
-.intro03 .article .ico_ext{margin:0 16px 0 2px;}
-.intro03 .ico_introdown{margin-right:2px;}
-.intro03 .article h3{position:relative;z-index:1; width:266px;height:100%;background-color:#000;color:#fff;font-size:17px;line-height:60px;padding-left:33px;margin-right:61px;font-weight:600;}
-.intro03 .article h3::after{position:absolute;z-index:-1;right:-43px;top:0; display:inline-block;width:60px;height:100%;content:"";transform: skew(-30deg);background-color:#000;}
-.intro03 .article > .body{padding:23px 0 23px 30px;}
-.intro03 .article > .section{margin-top:23px;}
-.intro03 .section > .tit{background-color:#1a94dd;}
-.intro03 .section > .tit h4{font-size:16px;color:#fff;font-weight:600;line-height:33px;padding:0 22px;}
-.intro03 .section > .body{padding:20px 86px 30px;}
-.num_list{counter-reset:num;}
-.num_list > li{padding-left:18px;text-indent:-18px;margin-top:20px;}
-.num_list > li:first-child{margin-top:0;}
-.num_list > li::before{counter-increment:num;content:counter(num)")";margin-right:8px;}
-.num_list .dash_list{margin-top:5px;}
-.num_list li p{padding-left:18px;font-size:14px;text-indent:-18px;}
-.intro03 .figure{margin-top:10px;text-indent:0;}
-.intro03 i{position:relative;top:-2px;color:#e95a5a;font-weight:600;}
-.intro03 .num_list a{display:inline;color:#1a94dd;font-size:14px;}
-.num_list table{width:697px;margin:13px 0 14px; line-height:36px;}
-.num_list th, .intro03 td{border:1px solid #b2b2b2;font-size:14px;}
-.num_list table tr:first-child th{width:269px;background-color:#fdeed1;color:#000;}
-.num_list th{background-color:#fbf1e6;font-weight:bold;}
-.num_list td{background-color:#fff;}
-.num_list p>span{display:block;text-indent:0;color:#555;}
-.procedure{width:769px;margin:26px 0 35px;}
-.reliefcenter{width:897px;margin:36px 0 26px;}
-.reliefcenter p,.procedure p{font-weight:bold;color:#000;text-align:center;}
-.procedure p{margin-bottom:22px;}
-.reliefcenter p{margin-bottom:5px;}
-.reliefcenter span::before{position:relative;top:2px;content:'·';font-size:25px;
-font-weight:bold;margin-right:5px;}
-.reliefcenter img{margin:5px 0 10px;}
-.dash_list span{display:inline;}
-.sort_bar:after{content:'/';display:inline;margin:0 10px;font-weight:normal;}
 
 /* 지진 상식 */
 .knowledge .tit h3{line-height:25px;}
@@ -192,3 +144,41 @@ font-weight:bold;margin-right:5px;}
 .dwelling04 .list_ex a{font-size:13px;}
 .dwelling04 .dot_list p{margin-bottom:0;}
 .dwelling04 .list_bar span{display:inline-block;width:110px;}
+
+/* declare */
+.download::before{position:relative;top:4px;left:-8px;content:'';display:inline-block;width:11px;height:16px;background:url(../images/guide_download.png)no-repeat top center;}
+.guidebook{margin-top:40px;padding:30px 0; border-top:1px solid #eee;border-bottom:2px solid #367fa9;}
+.guidebook p{font-size:18px;color:#176899;letter-spacing:-0.45px;}
+.guidebook{position:relative;}
+.guidebook a{position:absolute;top:20px;right:0;font-size:15px;line-height:37px;padding:0 13px 0 30px;}
+.img_wrap .download{margin-right:25%;}
+.declare .img_wrap{text-align:center;margin-bottom:20px;padding:25px 0;background-color:#efefef;}
+.declare >.section{margin-top:33px;}
+.dash_list{margin-left:10px;}
+.num_list{counter-reset:num;}
+.num_list > li{padding-left:18px;text-indent:-18px;margin-top:5px;}
+.fit_list .num_list>li{padding-left:0;text-indent:0;}
+.intro02 .fit_list.dot_list dd{padding-left:0px;}
+.num_list > li:first-child{margin-top:0;}
+.num_list > li::before{counter-increment:num;content:counter(num)")";margin-right:8px;}
+.num_list li p{padding-left:18px;font-size:14px;text-indent:-18px;}
+.declare i{position:relative;top:-2px;color:#e95a5a;font-weight:600;}
+.declare .num_list a{display:inline;color:#1a94dd;font-size:14px;}
+.declare.declare02 .download{margin:0 5px 0 15px; font-size:12px;}
+.num_list table{width:697px;margin:13px 0 14px; line-height:36px;}
+.num_list th, .declare td{border:1px solid #b2b2b2;font-size:14px;}
+.num_list table tr:first-child th{width:269px;background-color:#fdeed1;color:#000;}
+.num_list th{background-color:#fbf1e6;font-weight:bold;}
+.num_list td{background-color:#fff;}
+.num_list p>span{display:block;text-indent:0;color:#555;}
+.procedure{width:769px;margin:26px 0 35px;}
+.reliefcenter{width:897px;margin:36px 0 26px;}
+.reliefcenter p,.procedure p{font-weight:bold;color:#000;text-align:center;}
+.procedure p{margin-bottom:22px;}
+.reliefcenter p{margin-bottom:5px;}
+.reliefcenter span::before{position:relative;top:2px;content:'·';font-size:25px;
+font-weight:bold;margin-right:5px;}
+.reliefcenter img{margin:5px 0 10px;}
+.dash_list span{display:inline;}
+.sort_bar:after{content:'/';display:inline;margin:0 10px;font-weight:normal;}
+.reliefcenter .img_wrap{width:;}
