@@ -91,4 +91,12 @@ $(function () {
       $('.prev').removeClass("on");
     }
   })
+
+  $('.faq_question').children('p').on('click', function(){
+    $('.faq_question').removeClass('on');
+    $('.faq_answer').slideUp();
+    $(this).parent('.faq_question').addClass('on');
+    $(this).parent('.faq_question').children('.faq_answer').slideToggle();
+  })
+  return false;
 })
