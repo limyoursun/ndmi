@@ -76,10 +76,6 @@ font-weight:600;line-height:1.2;}
 .box_figure{background-color:#efefef;padding:30px 36px 20px;margin:5px 0 30px;}
 .box_figure .figure{text-align:center;margin-right:20px;}
 .box_figure .mg_fix{margin-top:20px;}
-.perinfo_wrap{width:100%;height:263px;border:1px solid #ededed;align-items:center;}
-.perinfo_wrap h3{margin-bottom:30px;font-size:18px;font-weight:bold;color:#176899;}
-.perinfo_wrap p{font-size:15px;letter-spacing:-.38px;line-height:26px;}
-.perinfo_wrap span{color:#1a94dd;}
 .faq_wrap{border-top:2px solid #367fa9;border-bottom:1px solid #dfdfdf;}
 .faq_question{text-align:left;border-top:1px solid #dfdfdf;}
 .faq_question>p{position:relative;padding:22px 0 22px 77px;font-size:17px;font-weight:bold;background:url(../images/bg_question.png) no-repeat top 18px left 25px;}
@@ -88,6 +84,24 @@ font-weight:600;line-height:1.2;}
 .faq_answer{display:none;padding:22px 22px 22px 77px;border-top:1px solid #dfdfdf;background:#fbfbfb url(../images/bg_answer.png) no-repeat top 18px left 25px;}
 .faq_answer p{font-size:15px;letter-spacing:-0.38px;line-height:22px;}
 .faq_answer p span{color:#ff6174;}
+.perinfo_wrap .section{margin-top:40px;}
+.circlenum li{position:relative;padding-left:35px;}
+.circlenum li:before{position:absolute;left:15px;}
+.circlenum li:first-child::before{content:'①';}
+.circlenum li:nth-child(2)::before{content:'②';}
+.circlenum li:nth-child(3)::before{content:'③';}
+.circlenum li:nth-child(4)::before{content:'④';}
+.circlenum li:nth-child(5)::before{content:'⑤';}
+.circlenum li:nth-child(6)::before{content:'⑥';}
+.perinfo_wrap{border-top:2px solid #367fa9;padding-top:25px;}
+.perinfo_wrap .dot_list{padding-left:30px;}
+.perinfo_wrap .dot_list>li::before{position:relative;top:3px;content:"·";margin-right:0;font-size:30px;color:#1a94dd;}
+.perinfo_wrap p{margin-bottom:0;margin-top:5px;}
+.perinfo_wrap .body>p{padding-left:15px;}
+.perinfo_wrap table{margin-left:15px;}
+.perinfo_wrap th, .perinfo_wrap td{border:1px solid #b2b2b2;padding:13px 0 12px;font-size:14px;color:#555;}
+.perinfo_wrap th{border:1px solid #b2b2b2;border-bottom-width:0;background-color:#eaf4fa;font-weight:bold;}
+.perinfo_wrap td{line-height:20px;}
 
 /* 지진 상식 */
 .knowledge .tit h3{line-height:25px;}
