@@ -1,4 +1,5 @@
 @@include('inc/top.html')
+
 <body>
   <div id="wrap">
     @@include('inc/header.html')
@@ -58,15 +59,23 @@
             <div class="section">
               <div class="tit">
                 <h3 class="font_skyblue ico_circleL">지진은 어떻게 발생하나요?</h3>
+                <dd>
+                  지진의 직접적인 원인은 암석권에 판(plate)의 움직임으로, 이러한 움직임이 직접 지진을 일으키기도 하고 다른 형태의 지진 에너지원을 제공하기도 한다. 판을 움직이는 힘은
+                  침강지역에서는 판이 암석권 밑의 상부맨틀에 비해 차고 무겁기 때문에 이를 뚫고 들어가려는 힘이 나타나고 발산지역에서는 상부 맨틀 밑에서 판이 상승하여 분리되거나 좌우로 넓어지려는 힘이
+                  나타나는 등 다양한 형태로 나타난다. 암석권(lithosphere)은 지표에서 100km 정도 두께의 딱딱한 층이며 그 밑은 암석권에 비해 덜 딱딱하고 온도도 높아 쉽게 변형될 수
+                  있는 층(asthenosphere)이 존재하는데 지진이 일어날 수 있는 깊이의 한계는 여기까지로 지표로부터 약 700km의 깊이가 된다. <span class="copyM">(출처:
+                    지질자원연구원)</span>
+                </dd>
               </div>
               <div class="body">
                 <dl class="dot_list">
                   <dt>판구조론(Plate Tectonics Theory)</dt>
-                  <dd>지진이 발생하기 위해서는 강성, 응력의 집중, 그리고 취약대의 조건이 요구된다. 일반적으로 연성상태인 암석권 하부의 맨틀에서는 지진이 발생하지 않는다.  암석권은 주로 강성이며 또한 경계부는 판과 사이의 상대운동에 의하여 응력이 집중하는 지역이므로 지진발생을 위한 많은 조건을 갖추고 있는 지역이다. 실제 지구상에서 일어나는 대부분의 지진은 이러한 판의 경계부에서 발생하고 있고 이러한 지진들을 판경계 지진이라고 한다. 반면 판내부의 취약대에서 지진이 발생할 수도 있는데 이러한 지진을 판내부 지진이라고 한다. <span class="copyM">(출처: 지질자원연구원)</span></dd>
+                  <dd>지구의 표면은 여러 개의 조각판으로 구분된다. 이 판들이 수평으로 이동할 때 판 경계에서 발생하는 에너지가 방출되는데 이것이 지진발생 원인이 된다. 판구조론은 지진 발생원인을
+                    밝히는 대표적인 이론으로 알려져 있다.</dd>
                 </dl>
                 <div class="img_wrap">
                   <img src="../images/img_knowledge_01_1.png" alt="암석권의 경계와 상호작용">
-                  <p class="copyM">&lt;암석권의 경계와 상호작용: https://simple.wikipedia.org/wiki/Plate_tectonics#/media/File:Tectonic_plate_boundaries.png&gt;</p>
+                  <p class="copyM">&lt;지각판의 분포와 운동방향 (이미지 출처: 두산백과)&gt;</p>
                 </div>
                 <dl class="dot_list">
                   <dt>탄성반발설(Elastic Rebound Theory)</dt>
@@ -74,7 +83,7 @@
                 </dl>
                 <div class="img_wrap">
                   <img src="../images/img_knowledge_01_2.png" alt="판의 경계와 지진분포">
-                  <p class="copyM">&lt;판의 경계와 지진분포: http://www.universetoday.com/wp-content/uploads/2010/03/plate-tectonics.jpg <span class="copyS">(출처: 9.12 지진백서)</span>&gt;</p>
+                  <p class="copyM">&lt;탄성 반발설 (이미지 출처: 9.12 지진백서)&gt;</p>
                 </div>
               </div>
             </div>
@@ -83,10 +92,12 @@
                 <h3 class="font_skyblue ico_circleL">우리나라는 지진 안전지대 인가요?</h3>
               </div>
               <div class="body">
-                <p class="dot">우리나라는 동쪽으로 태평양판(Pacific plate), 남동쪽으로 필리핀판(Philippine plate), 북동쪽으로 북아메리카판(North American plate)과 마주하고 있는 유라시아판(Eurasian plate) 내부에 위치하고 있습니다. 우리나라에서 발생하는 지진은 주로 지하 50km 이하에서 발생하는데 인도대륙의 유라시아 지판과의 충돌, 태평양판과 필리핀판 삽입의 영향을 받습니다.</p><br><br>
-                <p class="dot">지질구조상 지각이 약한 단층구조가 많은 편인 우리나라는 최근 들어 지진의 발생빈도가 급증하고 있는데 중국과 일본에서 발생한 지진의 영향을 받습니다.<br>통계적으로 중국(북동부 탄루단층지역)과 일본(서남부지역)에서 규모 7.0이상의 지진 발생후 약 2년 뒤 한반도에 규모 5.0정도의 지진이 발생할 가능성이 있는 것으로 분석한 사례도 있습니다.
-                <span class="copyS">(출처: 9.12 지진백서)</span></p>
+                <p class="">한반도는 불의 고리에서 벗어나 유라시아판에 위치하고 있어 비교적 안전한 편이지만, 중국의 강진 사례나 조선시대 역사 기록에 비춰볼 때 강진 가능성도 완전히 배재할 수 없다고 전문가들은 진단하고 있다. 특히, 1978~1899년까지의 연 평균 지진 발생 횟수는 19.2회였으나, 2000년 이후 연 평균 47.8회로 약 2.5배 급증한 것이 주목할만한 사항으로 우리나라의 내진 기준을 높이고 시공, 감독을 강화하는 등 재앙이 닥치기 전에 대비하는 자세가 필요하다고 지적하고 있다. (출처: 조선닷컴 더스토리) </p>
               </div>
+              <div class="img_wrap">
+                  <img src="../images/img_knowledge_01_3.png" alt="암석권의 경계와 상호작용">
+                  <p class="copyM">&lt;우리나라 지진 발생 추이 <span class="copyM">(이미지 출처 : 조선닷컴 더스토리)</span>&gt;</p>
+                </div>
             </div>
           </div>
         </div>
